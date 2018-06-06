@@ -1,0 +1,146 @@
+@import '../../../../../sass/_variables.scss';
+.tour-list-header
+{   
+   
+    height: 400px;
+    background-position: center;
+}
+
+.is-special{
+    background-image: url("/uploads/special-tours.jpg");
+}
+
+.is-central
+{
+    background-image: url("/uploads/central-western-tours.jpg");
+}
+
+.is-northern
+{
+    background-image: url("/uploads/northern-tours.jpg");   
+}
+
+.overlay
+{
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.title
+{
+    text-align: center;
+    height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #bb0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.one_tour
+{
+    border: 1px solid #dbdbdb;
+    height: auto;
+}
+
+a
+{
+    color: #363636;
+}
+.content
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.tour-list
+{
+    height: auto;;
+}
+
+.col-md-4
+{
+    margin-bottom: 15px;
+    
+}
+
+.card-body
+{
+    margin-top: 10px;
+}
+
+.card-body a
+{
+    color: #363636;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bb0000;
+    padding-bottom: 1.5rem;
+}
+
+ a:hover
+{
+    text-decoration: none;
+}
+
+ .detail,.booking {
+    padding: 1rem;
+}
+
+ .detail {
+    border-right: 1px solid #dbdbdb;
+}
+
+.footer .booking a {
+    color: #bb0000;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #dbdbdb;
+}
+
+.footer a {
+    display: flex;
+    color: #363636;
+    justify-content: space-between;
+    align-items: center;
+}
+ .footer .action {
+    display: flex;
+}
+img {
+    object-fit: cover;
+}
+
+
+ @media (min-width: 750px) and (max-width: 910px) {
+    .tour-information {
+        font-size: 11px;
+    }
+}
+ .list-tour-information{
+     padding: 1rem 0;
+     display: flex;
+ }
+ .price {
+     word-break: break-all;
+ }
+ @media (min-width: 575px) {
+     .overlay {
+         font-size: 3rem;
+     }
+ }

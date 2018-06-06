@@ -1,0 +1,40 @@
+<app-reloadpage [hidden] = "checkMessage"></app-reloadpage>
+<div class="tour-list" *ngFor = "let tour of tours">
+  <!-- TITLE -->
+  <div class="tour-list-header" [style.background-image]="'url(uploads/' + tour.cat_image + ')'" [style.background-color] = "'rgba(187, 0, 0, 0.9)'">
+    <div class="overlay">
+          {{ tour.cat_name }}
+    </div>
+  </div>
+  <!-- END TITLE -->
+  <!-- CONTENT -->
+  <div class="container-fluid content">
+    <div class="row justify-content-md-center">
+      <!-- col-md-4 -->
+      <div class="col-md-4 col-sm-6" *ngFor = "let item of tour.tours">
+        <div class="one_tour">
+          <img src="uploads/{{ item.tour_image }}" onerror = "this.src = 'images/default/picture.jpg'" width="100%" height="260px" alt="">
+          <div class="title">
+            <a routerLink="/tours/{{item.id}}/{{item.slug}}"> {{ item.title }} </a>
+          </div>
+          <div class="tour-information">
+            <div class="list-tour-information">
+              <div class="col-3 col-sm-3 text-center"><b> {{ item.duration }} </b> Days</div>
+              <div class="col-3 col-sm-3 text-center"><b> {{ item.cities }} </b> Cities</div>
+              <div class="col-3 col-sm-3 text-center"><b> {{ item.distance }} </b> Km</div>
+              <div class="col-3 col-sm-3 text-center price"><b> ${{ item.price_normal|number:'1.0-3' }} </b></div>
+            </div>
+            <div class="footer">
+                <div class="action">
+                  <div class="col-6 col-sm-6 detail"><a routerLink="/tours/{{item.id}}/{{item.slug}}"> DETAILS <i class="fa fa-indent" aria-hidden="true"></i></a></div>
+                  <div class="col-6 col-sm-6 booking"><a routerLink="/tours/{{item.id}}/booking/{{item.slug}}">BOOKING <i class="fa fa-pencil-square" aria-hidden="true"></i></a></div>
+                </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+      <!-- END col-md-4 -->
+    </div>
+  </div>
+  <!-- END CONTENT -->
+</div>

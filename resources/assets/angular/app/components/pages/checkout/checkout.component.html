@@ -1,0 +1,25 @@
+<app-reloadpage [hidden] = "checkMessage"></app-reloadpage>
+<div class="container">
+  <mat-horizontal-stepper [linear]="true" #stepper (selectionChange)="selectionChange($event)">
+    <mat-step [completed]="_riderService.isValid"  [editable]="_riderService.isValid">
+      <ng-template matStepLabel>RIDERS</ng-template>
+        <app-riders (next)="stepper.next($event)"></app-riders>
+    </mat-step>
+
+    <mat-step [completed]="_creditCardService.isNext" [editable]="_creditCardService.isNext">
+        <ng-template matStepLabel>CREDIT CARD DETAILS </ng-template>
+          <app-creditcard (next)="stepper.next($event)"></app-creditcard>
+      </mat-step>
+
+    <mat-step>
+      <ng-template matStepLabel>SUCCESS!</ng-template>
+      <h1 class="text-center">You are booking tour success!</h1>
+      <app-success></app-success>
+      <div class="d-flex justify-content-center align-items-center container continue ">
+        <div class="row ">
+          <a mat-raised-button color="warn" href="/tours"(click) = "removeData()">CONTINUE BOOK TOUR</a>
+        </div>
+        </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>

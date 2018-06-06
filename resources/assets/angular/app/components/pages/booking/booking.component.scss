@@ -1,0 +1,287 @@
+@import '../../../../../sass/_variables.scss';
+.title
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h2{
+    color: $background-color;
+}
+.slider
+{
+    margin-top: 10px;
+}
+
+.slider a img
+{
+    height: 100px;
+    object-fit: cover;
+}
+
+.carousel-item
+{
+    padding: 0;
+    border: 1px solid #fff;
+}
+i
+{
+    color: #fff!important;
+}
+ul li
+{
+    list-style: none;
+    font-size: 1rem;
+}
+.unstyled {
+    padding: 0;
+}
+.tour-content-detail
+{
+    margin-top: 2rem;
+}
+.btncheck
+{
+    float: right;
+    margin-top: 5px;
+    background-color: unset;
+    color: $color-text;
+}
+.datecheck
+{
+   margin-bottom: 1rem;
+}
+
+.description-tour
+{
+    margin-top: 20px;
+}
+p
+{
+    margin-top: 30px;
+}
+@media (max-width: 767px) 
+{
+    .slider img{
+        height: 200px!important;
+        width: 300px;
+    }
+}
+
+
+/* tour-booking-form */
+.tour-booking-form
+{
+    margin: 1rem 0 2rem 0;
+    border: 1px solid #b43c3c;
+    height: auto;
+}
+.tour-booking-form h3
+{
+    position: relative;
+    text-transform: capitalize;
+    background-color: #7f0000;
+    padding: 1rem;
+    color: #fff;
+}
+.tour-booking-form h3::after
+{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+}
+.tour-booking-form  form
+{
+    padding: 20px;
+}
+.required
+{
+    color: red;
+    display: inline-block;
+    margin-left: -3px;
+}
+.tour-booking-form a
+{
+    color: #fff;
+}
+.map{
+    margin-top: 30px;
+}
+.btn-contactus{
+
+    background-color: #b43c3c;
+    margin-top: 30px;
+    padding: 10px 5% 8px;
+    padding-top: 5px;
+    padding-right: 5%;
+    padding-bottom: 8px;
+    padding-left: 5%;
+    color: #fff;
+    text-align: left;
+    border-radius: 0rem;
+    font-weight:bold
+}
+
+.side-column a.btn-contactus:link {
+    background:transparent url('/images/icons/mail-01.png') no-repeat right center;
+    background-color: #b43c3c;
+    width:100%;
+    display:block;
+    padding:10px 5% 8px;
+    text-align:left;
+    color:#fff;
+    font-weight:bold;
+    outline: none;}
+a{
+    text-decoration: none;
+}
+.modal-header{
+    border-bottom: none !important;
+}
+.modal-body{
+    padding: inherit;
+}
+.modal-content{
+ 
+    height: auto;
+    position: absolute;
+    opacity: 1;
+    overflow: visible;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+select, input[type="text"], textarea {
+    width: 100%;
+
+}
+.col-2 {
+    width: auto;
+}
+.form-group.row{
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+.input-xlarge{
+    float: right;
+}
+input[type="text"],textarea:focus {
+    outline: none;
+}
+
+.control-label {
+    padding-top: 5px;
+    text-align: right;
+}
+.btn-submit{
+    background-color: #b43c3c;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+.help-block {
+    display: flex; justify-content: center;
+}
+.form-actions{
+    margin-bottom: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+fieldset {
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border: 0;
+    border-top-color: initial;
+    border-top-style: initial;
+    border-top-width: 0px;
+    border-right-color: initial;
+    border-right-style: initial;
+    border-right-width: 0px;
+    border-bottom-color: initial;
+    border-bottom-style: initial;
+    border-bottom-width: 0px;
+    border-left-color: initial;
+    border-left-style: initial;
+    border-left-width: 0px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+    -webkit-margin-end: 2px;
+    -webkit-padding-before: 0.35em;
+    -webkit-padding-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+    min-width: -webkit-min-content;
+    border-style: groove;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-bottom-style: groove;
+    border-left-style: groove;
+    border-color: threedface;
+    border-top-color: threedface;
+    border-right-color: threedface;
+    border-bottom-color: threedface;
+    border-left-color: threedface;
+    border-image: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  mat-form-field
+  {
+      width: 100%;
+  }
+  mat-radio-button
+  {
+      margin-right: 10px!important;
+  }
+  .note
+  {
+      margin-top: 20px;
+  }
+  .otherCode:hover
+  {
+      cursor: pointer;
+      text-decoration-style: inherit;
+  }
+.tour-header
+{
+    background: rgba(187, 0, 0, 0.9);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 2.4rem;
+    color: #fff;
+}
+.ng-valid
+{
+    border-left: none!important;
+}

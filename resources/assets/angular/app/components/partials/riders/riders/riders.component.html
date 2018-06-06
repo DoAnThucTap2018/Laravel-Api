@@ -1,0 +1,44 @@
+ <mat-horizontal-stepper [linear]="true" id = "rider" #stepper1>
+      <mat-step *ngFor= "let rider of numberRiders; let i = index;" [stepControl]="_riderService.isNext[rider]" [completed]="_riderService.isNext[rider]" label="Rider {{i+1}}" #name>
+        <div class="d-flex justify-content-center align-items-center container ">
+          <div class="row ">
+            <form [formGroup]="_riderService.ridersFormGroup[rider]" class="frm">
+              <mat-form-field>
+                <input matInput placeholder="First Name" formControlName="firstname" required>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Last Name" formControlName="lastname" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-select formControlName="gender_id" placeholder="Gender" required>
+                  <mat-option *ngFor = "let title of titles" value="{{title.id}}" > {{ title.name }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput type="date" placeholder="Date of Birth" formControlName="date_of_birth" required>
+              </mat-form-field>
+              <mat-form-field>
+                <mat-select formControlName="country_id" placeholder="Country" required>
+                  <mat-option *ngFor = "let country of countries" value="{{country.id}}" > {{ country.name }}</mat-option>
+                </mat-select>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput type="number" placeholder = "Contact Number" formControlName="contact_number" required>
+              </mat-form-field>
+              <mat-form-field>
+                  <mat-select formControlName="lbmt_tshirt_id" placeholder="T-Shirt Size" required>
+                    <mat-option *ngFor = "let lbmtTshirt of lbmtTshirts" value="{{lbmtTshirt.id}}" > {{ lbmtTshirt.name }}</mat-option>
+                  </mat-select>
+              </mat-form-field>
+              <div class="d-flex justify-content-center align-items-center container ">
+                <div class="row ">
+                    <button mat-raised-button color="primary" *ngIf = "i > 0" matStepperPrevious>BACK</button>
+                    <button mat-raised-button color="primary" (click)="onSubmitRider(rider, stepper1)">REGISTER RIDERS {{ i+1 }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </mat-step>
+    </mat-horizontal-stepper>
+   

@@ -1,0 +1,29 @@
+input.form-control {
+  width: 84%; }
+
+textarea.tx {
+  width: 84%;
+  resize: none; }
+
+.row {
+  line-height: 2em; }
+
+select {
+  with: 84% !important; }
+
+.small-box .icon {
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+  transition-delay: initial;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  z-index: 0;
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.15); }
+
+/*# sourceMappingURL=main.css.map */
