@@ -90,10 +90,8 @@ class TaxonomyItem extends Model
         try {
             $cats = TaxonomyItem::select('taxonomy_items.id', 'taxonomy_items.name as taxonomy_item_name')
                 ->get();
-            return response()->json([
-                'success'  => true,
-                'data'     =>  $cats,
-                'message'  => 'Get data success'],200);
+            return response($cats);
+
 
         }catch (\Exception $e) {
             return response()->json('Internal Server Error', 500);

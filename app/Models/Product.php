@@ -63,11 +63,7 @@ class Product extends Model
                         $results[] = $datas;
                     }
                 }
-                return  response()->json([
-                    'success'  => true,
-                    'data'     =>  $results,
-                    'message'  => 'Get data success'],200);
-
+                return  response( $results);
             }
             return response()->json([
                 'success'  => false,
