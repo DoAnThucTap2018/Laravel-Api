@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\Order;
 use App\Models\ItemType;
 use App\Models\Item;
+use App\Models\TaxonomyItem;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -33,5 +34,11 @@ class ProductApiController extends Controller
         $orders=new Order();
         $orders=$orders->getOrderModel($id);
         return $orders;
+    }
+    public function menu()
+    {
+        $menu=new TaxonomyItem();
+        $menu=$menu->getMenuModel();
+        return $menu;
     }
 }

@@ -80,7 +80,25 @@ class TaxonomyItem extends Model
 
         return $taxonomy;
     }
+    /*
+    |--------------------------------------------------------------------------
+    | FUNCTIONS API
+    |--------------------------------------------------------------------------
+    */
+    public function getMenuModel()
+    {
+        try {
+            $cats = TaxonomyItem::select('taxonomy_items.id', 'taxonomy_items.name as taxonomy_item_name')
+                ->get();
+            return response()->json([
+                'success'  => true,
+                'data'     =>  $cats,
+                'message'  => 'Get data success'],200);
 
+        }catch (\Exception $e) {
+            return response()->json('Internal Server Error', 500);
+        }
+    }
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
