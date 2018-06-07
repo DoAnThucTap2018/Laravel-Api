@@ -40,7 +40,7 @@ class Address extends Model
     |--------------------------------------------------------------------------
     */
     // Model Api Get Address
-    public function getAddressModel($id)
+    public function getAddress($id)
     {
         DB::beginTransaction();
         try{
@@ -65,7 +65,7 @@ class Address extends Model
     }
 
     // Model Api Put Address
-    public function putAddressModel($id,$request)
+    public function putAddress($id,$request)
     {
         DB::beginTransaction();
         try{
@@ -92,6 +92,7 @@ class Address extends Model
             DB::commit();
             return response()->json([
                 'success'  => true,
+
                 'message'  =>'Update information success'
             ],200);
         } catch (\Exception $e) {

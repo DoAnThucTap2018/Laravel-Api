@@ -16,18 +16,18 @@ use DB;
 class AddressApiController extends Controller
 {
     // Api Put Address
-    public function putAddress($id,Request $request)
+    public function update($id,Request $request)
     {
         $address=new Address();
-        $address=$address->putAddressModel($id,$request);
+        $address=$address->putAddress($id,$request);
         return $address;
     }
 
     // Api Get Address
-    public function getAddress($id)
+    public function index($id)
     {
         $address=new Address();
-        $address=$address->getAddressModel($id);
+        $address=$address->getAddress($id);
         return $address;
     }
 }

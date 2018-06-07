@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\DB;
 
 class PaymentApiController extends Controller
 {
-    public function postPaymentProduct(Request $request)
+    public function payProduct(Request $request)
     {
         DB::beginTransaction();
         try {
@@ -61,12 +61,12 @@ class PaymentApiController extends Controller
             DB::rollback();
             return response()->json([
                 'success'  => false,
-                'status'   =>'Invalid ID supplied'],401);
+                'status'   =>'Invalid ID supplied'],200);
         }
         if ($success)
             return response()->json([
                 'success'  => true,
-                'status'=>'Update information successfully',
+                'status'=>'Order success',
             ],200);
     }
 }

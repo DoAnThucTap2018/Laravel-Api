@@ -25,8 +25,6 @@ class Product extends Model
         'item_id',
         'price',
         'image',
-        'attributes',
-        'additional_information',
     ];
     protected $casts = [
     ];
@@ -36,16 +34,18 @@ class Product extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
-    // Model Api Get Product
-    public function getProductModel()
+    // Model Api Get list category Product
+    public function listProductModel($id)
     {
         DB::beginTransaction();
         try {
-            $cats = TaxonomyItem::select('taxonomy_items.id', 'taxonomy_items.name as taxonomy_item_name', 'taxonomy_items.image as taxonomy_item_image')
+            $cats = TaxonomyItem::select('taxonomy_items.id', 'taxonomy_items.name as taxonomy_item_name')
+                ->where('taxonomy_items.id',$id)
                 ->get();
             if ($cats->count() != 0) {
                 foreach ($cats as $c) {
                     $item_cat = ItemCategory::where('item_categories.taxonomy_item_id', '=', $c->id)->get();
+                    //return $item_cat;
                     if ($item_cat->count() != 0) {
                         $datas['Category_name'] = $c->taxonomy_item_name;
                         $products = Product::join('items', 'products.item_id', '=', 'items.id')
@@ -63,24 +63,32 @@ class Product extends Model
                         $results[] = $datas;
                     }
                 }
-                return $results;
+                return  response()->json([
+                    'success'  => true,
+                    'data'     =>  $results,
+                    'message'  => 'Get data success'],200);
+
             }
-            return false;
+            return response()->json([
+                'success'  => false,
+                'message'  => 'Invalid ID supplied'],200);
+            ;
         }catch (\Exception $e) {
             DB::rollback();
-            return response()->json('Product Not failed', 401);
+            return response()->json('Internal Server Error', 500);
         }
     }
 
+
     // Model Api Get Detail Product
-    public function getDetailProductModel($id)
+    public function detailProductModel($id)
     {
         try {
             $detail_products=Product::with('item')->find($id);
             if (!isset($detail_products) and empty($detail_products)) {
                 return response()->json([
                     'success'  => false,
-                    'message'  => 'Invalid ID supplied'],401);
+                    'message'  => 'Invalid ID supplied'],200);
             }
             return response()->json([
                 'success'  => true,

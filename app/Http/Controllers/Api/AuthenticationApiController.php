@@ -17,14 +17,14 @@ use Illuminate\Support\Facades\Password;
 class AuthenticationApiController extends Controller
 {
     // Function Api Post Login
-    public function postlogin(Request $request)
+    public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
         try {
             if (! $token = JWTAuth::attempt($credentials)) {
                 return response()->json(
                     [   'success' => false,
-                        'message' => 'Account or password is incorrect'], 401);
+                        'message' => 'Account or password is incorrect'], 200);
             }
             $user = Auth::user();
             return response()->json([
@@ -32,14 +32,23 @@ class AuthenticationApiController extends Controller
                 'token'    => $token,
                 'data'     => $user,
                 'message'  => 'Login success',
-            ]);
+            ],200);
         } catch (JWTException $e) {
             return response()->json(['Error' => 'Internal Server Error'], 500);
         }
     }
 
+    public function logout(Request $request)
+    {
+        $this->validate($request, [
+            'token' => 'required'
+        ]);
+
+        JWTAuth::invalidate($request->input('token'));
+    }
+
     // Function APi Post Register
-    public function postRegister(Request $request)
+    public function register(Request $request)
     {
         DB::beginTransaction();
         try {
@@ -59,7 +68,7 @@ class AuthenticationApiController extends Controller
                 'first_name'            => 'required',
                 'last_name'             => 'required',
                 'email'                 => 'required|email|unique:users',
-                'password'              => 'required',
+                'password'              => 'required|min:6|max:255',
                 'estimated_consumption' => 'required|numeric',
                 'referral_number'       => 'required|numeric',
                 'identification_type'   => 'required|numeric',
@@ -70,7 +79,7 @@ class AuthenticationApiController extends Controller
                 return response([
                     'success'  => false,
                     'message'  => $validator->errors(),
-                ], 401);
+                ], 200);
 
             }
             $user = new User();
@@ -97,13 +106,13 @@ class AuthenticationApiController extends Controller
         }
     }
     // Function Api Forgot Password
-    public function sendResetEmail(Request $request)
+    public function forgotPasword(Request $request)
     {
         $user = User::where('email', '=', $request->get('email'))->first();
         if(!$user) {
             return response()->json(
                 [   'success' => false,
-                    'message' => 'The Email Is Incorrect'], 401);
+                    'message' => 'The Email Is Incorrect'], 200);
         }
         $broker = $this->getPasswordBroker();
         $sendingResponse = $broker->sendResetLink($request->only('email'));
@@ -121,16 +130,17 @@ class AuthenticationApiController extends Controller
         return Password::broker();
     }
 
+
     // Function Api Get Detail User
-    public function getDetailUser($id)
+    public function index($id)
     {
         $detail=new User();
-        $detail=$detail->getDetailUserModel($id);
+        $detail=$detail->getUser($id);
         if ($detail==false)
             return response()->json([
                 'success'  => false,
                 'message'  =>'No data'
-            ], 401);
+            ], 200);
         return response()->json([
             'success'  => true,
             'detail'   => $detail,
@@ -139,10 +149,10 @@ class AuthenticationApiController extends Controller
     }
 
     // Function Api Put Detail User
-    public function putDetailUser($id,Request $request)
+    public function update($id,Request $request)
     {
         $detail=new User();
-        $detail=$detail->putDetailUserModel($id,$request);
+        $detail=$detail->putUser($id,$request);
         return $detail;
     }
 }

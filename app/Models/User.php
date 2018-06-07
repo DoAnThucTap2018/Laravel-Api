@@ -13,6 +13,7 @@ use Auth;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
 use DB;
+use App\Notifications\MailResetPasswordToken;
 
 
 class User extends Authenticatable implements JWTSubject
@@ -58,7 +59,7 @@ class User extends Authenticatable implements JWTSubject
     |--------------------------------------------------------------------------
     */
     // Function Model Api Get Detail User
-    public function getDetailUserModel($id)
+    public function getUser($id)
     {
         try{
             $detail = User::select('email','mobile')->find($id);
@@ -75,7 +76,7 @@ class User extends Authenticatable implements JWTSubject
     }
 
     // Function Model Api Put Detail User
-    public function putDetailUserModel($id, $request)
+    public function putUser($id, $request)
     {
         DB::beginTransaction();
         try {
@@ -95,14 +96,14 @@ class User extends Authenticatable implements JWTSubject
                 return response()->json([
                     'success'  => false,
                     'message'  =>$validator->errors()
-                ],401);
+                ],200);
 
             }
             if (!Auth::attempt(array('email' => $request->email, 'password' => $request->oldpass))) {
                 return response()->json([
                     'success'  => false,
                     'message'  =>'Email or password is incorrect'
-                ],401);
+                ],200);
             }
             $user = User::find($id);
             $user->email    = $input['email'];
@@ -139,8 +140,9 @@ class User extends Authenticatable implements JWTSubject
     }
     public function sendPasswordResetNotification($token)
     {
-        $this->notify(new ResetPasswordNotification($token));
+        $this->notify(new MailResetPasswordToken($token));
     }
+
 
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.
@@ -197,3 +199,4 @@ class User extends Authenticatable implements JWTSubject
     }
 
 }
+

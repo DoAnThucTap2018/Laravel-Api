@@ -17,21 +17,22 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::group(['prefix'=>'auth'],function (){
-    Route::post('postlogin',"Api\AuthenticationApiController@postLogin");
-    Route::post('postregister',"Api\AuthenticationApiController@postRegister");
-    Route::post('sendresetemail',"Api\AuthenticationApiController@sendResetEmail");
-    Route::get('/getdetailuser/{id}',"Api\AuthenticationApiController@getDetailUser");
-    Route::put('/putdetailuser/{id}',"Api\AuthenticationApiController@putDetailUser");
+    Route::post('login',"Api\AuthenticationApiController@login");
+    Route::post('logout',"Api\AuthenticationApiController@logout");
+    Route::post('register',"Api\AuthenticationApiController@register");
+    Route::post('forgotpasword',"Api\AuthenticationApiController@forgotPasword");
+    Route::get('user/{id}',"Api\AuthenticationApiController@index");
+    Route::put('user/{id}',"Api\AuthenticationApiController@update");
 });
 Route::group(['prefix'=>'address'],function (){
-    Route::get('/getaddress/{id}',"Api\AddressApiController@getAddress");
-    Route::put('/putaddress/{id}',"Api\AddressApiController@putAddress");
+    Route::get('{id}',"Api\AddressApiController@index");
+    Route::put('{id}',"Api\AddressApiController@update");
 });
-Route::group(['prefix' => 'products'], function() {
-    Route::get('getlistproduct', "Api\ProductApiController@getListProduct");
-    Route::get('/getorderproduct/{id}', "Api\ProductApiController@getOrderProduct");
-    Route::get('/getdetailproduct/{id}', "Api\ProductApiController@getDetailProduct");
+Route::group(['prefix' => 'product'], function() {
+    Route::get('/listproduct/{id}', "Api\ProductApiController@listProduct");
+    Route::get('/detailproduct/{id}', "Api\ProductApiController@detailProduct");
+    Route::get('/orderproduct/{id}', "Api\ProductApiController@orderProduct");
 });
-Route::group(['prefix' => 'payments'], function() {
-    Route::post('postpaymentproduct', "Api\PaymentApiController@postPaymentProduct");
+Route::group(['prefix' => 'payment'], function() {
+    Route::post('product', "Api\PaymentApiController@payProduct");
 });

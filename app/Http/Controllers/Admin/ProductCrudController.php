@@ -197,29 +197,29 @@ class ProductCrudController extends CrudController
             'type'  => 'summernote',
             'tab'   => 'Product detail',
         ]);
-        $this->crud->addField([
-            'name'      => 'attributes',
-            'label'     => 'Attribute',
-            'type'      => 'summernote',
-            'key'       => 'product.attributes',
-            'entity'    => 'product',
-            'attribute' => 'attributes',
-            'tab'       => 'Product detail',
-        ]);
+//        $this->crud->addField([
+//            'name'      => 'attributes',
+//            'label'     => 'Attribute',
+//            'type'      => 'summernote',
+//            'key'       => 'product.attributes',
+//            'entity'    => 'product',
+//            'attribute' => 'attributes',
+//            'tab'       => 'Product detail',
+//        ]);
         $this->crud->addField([
             'name'  => 'description',
             'label' => 'Description',
             'type'  => 'summernote',
             'tab'   => 'Product detail',
         ]);
-        $this->crud->addField([
-            'name'      => 'additional_information',
-            'label'     => 'Additional Information',
-            'key'       => 'product.additional_information',
-            'entity'    => 'product',
-            'type'      => 'summernote',
-            'tab'       => 'Product detail',
-        ]);
+//        $this->crud->addField([
+//            'name'      => 'additional_information',
+//            'label'     => 'Additional Information',
+//            'key'       => 'product.additional_information',
+//            'entity'    => 'product',
+//            'type'      => 'summernote',
+//            'tab'       => 'Product detail',
+//        ]);
     }
 
 }
