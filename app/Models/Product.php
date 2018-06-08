@@ -143,7 +143,46 @@ class Product extends Model
             'success'  => false,
             'message'  => 'Invalid ID supplied'],200);
     }
-
+    public function categoryProductModel($id, $i)
+    {
+        $cats=TaxonomyItem::select('taxonomy_items.id','taxonomy_items.name as taxonomy_item_name')
+            ->where('taxonomy_items.id',$id)
+            ->get();
+        if ($cats->count() != 0) {
+            foreach ($cats as $c) {
+                $item_cat = ItemCategory::where('item_categories.taxonomy_item_id', '=', $c->id)->get();
+                if ($item_cat->count() != 0) {
+                    $datas['cat_name'] = $c->taxonomy_item_name;
+                    $products = Product::join('items', 'products.item_id', '=', 'items.id')
+                        ->join('units', 'items.unit_id', '=', 'units.id')
+                        ->where('items.id','<>',$i)
+                        ->select(
+                            'items.id',
+                            'items.title',
+                            'items.slug',
+                            'items.description',
+                            'items.summary',
+                            'products.price',
+                            'products.image as product_image',
+                            'units.name'
+                        )
+                        ->join('item_categories', 'items.id', '=', 'item_categories.item_id')
+                        ->where('item_categories.taxonomy_item_id', '=', $c->id)
+                        ->get();
+                    $datas['products'] = $products;
+                    $results = $datas;
+                }
+            }
+            return response()->json([
+                'success'  => true,
+                'data'     =>$results,
+                'message'  => 'Get data success'
+            ],200);
+        }
+        return response()->json([
+            'success'  => false,
+            'message'  => 'Invalid ID supplied'],200);
+    }
     /*
     |--------------------------------------------------------------------------
     | RELATIONS
