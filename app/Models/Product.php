@@ -81,10 +81,12 @@ class Product extends Model
     {
         try {
             $detail_products = Product::join('items', 'products.item_id', '=', 'items.id')
+                ->join('item_categories','items.id','=','item_categories.item_id')
                 ->join('units', 'items.unit_id', '=', 'units.id')
                 ->select('products.id','products.item_id','products.price','products.image',
                     'items.id','items.item_type_id','items.title','items.slug','items.description','items.summary',
-                    'units.name')
+                    'units.name',
+                    'item_categories.taxonomy_item_id')
                 ->where('items.id',$id)
                 ->get();
            // return json_decode($detail_products);
