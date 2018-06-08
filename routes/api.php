@@ -32,7 +32,12 @@ Route::group(['prefix' => 'product'], function() {
     Route::get('/listproduct/{id}', "Api\ProductApiController@listProduct");
     Route::get('/detailproduct/{id}', "Api\ProductApiController@detailProduct");
     Route::get('/orderproduct/{id}', "Api\ProductApiController@orderProduct");
+    Route::get('menu', "Api\ProductApiController@menu");
+    Route::get('index', "Api\ProductApiController@index");
 });
 Route::group(['prefix' => 'payment'], function() {
     Route::post('product', "Api\PaymentApiController@payProduct");
+});
+Route::group(['prefix'=>'data'],function (){
+    Route::get('/slide',"Api\SlideApiController@getSlide");
 });
