@@ -80,7 +80,13 @@ class Product extends Model
     public function detailProductModel($id)
     {
         try {
-            $detail_products=Product::with('item')->find($id);
+            $detail_products = Product::join('items', 'products.item_id', '=', 'items.id')
+                ->join('units', 'items.unit_id', '=', 'units.id')
+                ->select('products.id','products.item_id','products.price','products.image',
+                    'items.id','items.item_type_id','items.title','items.slug','items.description','items.summary',
+                    'units.name')
+                ->where('products.id',$id)
+                ->get();
             if (!isset($detail_products) and empty($detail_products)) {
                 return response()->json([
                     'success'  => false,
@@ -90,11 +96,45 @@ class Product extends Model
                 'success'  => true,
                 'data'     => $detail_products,
                 'message'  => 'Get data success'],200);
-
+//
         }catch (\Exception $e) {
             return response()->json('Internal Server Error', 500);
         }
     }
+
+    public function getAllProductModel()
+    {
+       $cats=TaxonomyItem::select('taxonomy_items.id','taxonomy_items.name as taxonomy_item_name')
+        ->get();
+        if ($cats->count() != 0) {
+            foreach ($cats as $c) {
+                $item_cat = ItemCategory::where('item_categories.taxonomy_item_id', '=', $c->id)->get();
+                if ($item_cat->count() != 0) {
+                    $datas['cat_name'] = $c->taxonomy_item_name;
+                    $products = Product::join('items', 'products.item_id', '=', 'items.id')
+                        ->join('units', 'items.unit_id', '=', 'units.id')
+                        ->select(
+                            'items.id',
+                            'items.title',
+                            'items.slug',
+                            'items.description',
+                            'items.summary',
+                            'products.price',
+                            'products.image as product_image',
+                            'units.name'
+                        )
+                        ->join('item_categories', 'items.id', '=', 'item_categories.item_id')
+                        ->where('item_categories.taxonomy_item_id', '=', $c->id)
+                        ->get();
+                    $datas['products'] = $products;
+                    $results[] = $datas;
+                }
+            }
+            return $results;
+        }
+        return false;
+    }
+
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

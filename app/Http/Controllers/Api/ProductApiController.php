@@ -41,4 +41,10 @@ class ProductApiController extends Controller
         $menu=$menu->getMenuModel();
         return $menu;
     }
+    public function index()
+    {
+        $allProduct=new Product();
+        $allProduct=  $allProduct->getAllProductModel();
+        return  $allProduct;
+    }
 }
