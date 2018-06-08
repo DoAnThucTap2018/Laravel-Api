@@ -1,274 +1,5 @@
 webpackJsonp(["main"],{
 
-/***/ "./node_modules/moment/locale recursive ^\\.\\/.*$":
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./af": "./node_modules/moment/locale/af.js",
-	"./af.js": "./node_modules/moment/locale/af.js",
-	"./ar": "./node_modules/moment/locale/ar.js",
-	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
-	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
-	"./ar.js": "./node_modules/moment/locale/ar.js",
-	"./az": "./node_modules/moment/locale/az.js",
-	"./az.js": "./node_modules/moment/locale/az.js",
-	"./be": "./node_modules/moment/locale/be.js",
-	"./be.js": "./node_modules/moment/locale/be.js",
-	"./bg": "./node_modules/moment/locale/bg.js",
-	"./bg.js": "./node_modules/moment/locale/bg.js",
-	"./bm": "./node_modules/moment/locale/bm.js",
-	"./bm.js": "./node_modules/moment/locale/bm.js",
-	"./bn": "./node_modules/moment/locale/bn.js",
-	"./bn.js": "./node_modules/moment/locale/bn.js",
-	"./bo": "./node_modules/moment/locale/bo.js",
-	"./bo.js": "./node_modules/moment/locale/bo.js",
-	"./br": "./node_modules/moment/locale/br.js",
-	"./br.js": "./node_modules/moment/locale/br.js",
-	"./bs": "./node_modules/moment/locale/bs.js",
-	"./bs.js": "./node_modules/moment/locale/bs.js",
-	"./ca": "./node_modules/moment/locale/ca.js",
-	"./ca.js": "./node_modules/moment/locale/ca.js",
-	"./cs": "./node_modules/moment/locale/cs.js",
-	"./cs.js": "./node_modules/moment/locale/cs.js",
-	"./cv": "./node_modules/moment/locale/cv.js",
-	"./cv.js": "./node_modules/moment/locale/cv.js",
-	"./cy": "./node_modules/moment/locale/cy.js",
-	"./cy.js": "./node_modules/moment/locale/cy.js",
-	"./da": "./node_modules/moment/locale/da.js",
-	"./da.js": "./node_modules/moment/locale/da.js",
-	"./de": "./node_modules/moment/locale/de.js",
-	"./de-at": "./node_modules/moment/locale/de-at.js",
-	"./de-at.js": "./node_modules/moment/locale/de-at.js",
-	"./de-ch": "./node_modules/moment/locale/de-ch.js",
-	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
-	"./de.js": "./node_modules/moment/locale/de.js",
-	"./dv": "./node_modules/moment/locale/dv.js",
-	"./dv.js": "./node_modules/moment/locale/dv.js",
-	"./el": "./node_modules/moment/locale/el.js",
-	"./el.js": "./node_modules/moment/locale/el.js",
-	"./en-au": "./node_modules/moment/locale/en-au.js",
-	"./en-au.js": "./node_modules/moment/locale/en-au.js",
-	"./en-ca": "./node_modules/moment/locale/en-ca.js",
-	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
-	"./en-gb": "./node_modules/moment/locale/en-gb.js",
-	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
-	"./en-ie": "./node_modules/moment/locale/en-ie.js",
-	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
-	"./en-il": "./node_modules/moment/locale/en-il.js",
-	"./en-il.js": "./node_modules/moment/locale/en-il.js",
-	"./en-nz": "./node_modules/moment/locale/en-nz.js",
-	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
-	"./eo": "./node_modules/moment/locale/eo.js",
-	"./eo.js": "./node_modules/moment/locale/eo.js",
-	"./es": "./node_modules/moment/locale/es.js",
-	"./es-do": "./node_modules/moment/locale/es-do.js",
-	"./es-do.js": "./node_modules/moment/locale/es-do.js",
-	"./es-us": "./node_modules/moment/locale/es-us.js",
-	"./es-us.js": "./node_modules/moment/locale/es-us.js",
-	"./es.js": "./node_modules/moment/locale/es.js",
-	"./et": "./node_modules/moment/locale/et.js",
-	"./et.js": "./node_modules/moment/locale/et.js",
-	"./eu": "./node_modules/moment/locale/eu.js",
-	"./eu.js": "./node_modules/moment/locale/eu.js",
-	"./fa": "./node_modules/moment/locale/fa.js",
-	"./fa.js": "./node_modules/moment/locale/fa.js",
-	"./fi": "./node_modules/moment/locale/fi.js",
-	"./fi.js": "./node_modules/moment/locale/fi.js",
-	"./fo": "./node_modules/moment/locale/fo.js",
-	"./fo.js": "./node_modules/moment/locale/fo.js",
-	"./fr": "./node_modules/moment/locale/fr.js",
-	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
-	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
-	"./fr.js": "./node_modules/moment/locale/fr.js",
-	"./fy": "./node_modules/moment/locale/fy.js",
-	"./fy.js": "./node_modules/moment/locale/fy.js",
-	"./gd": "./node_modules/moment/locale/gd.js",
-	"./gd.js": "./node_modules/moment/locale/gd.js",
-	"./gl": "./node_modules/moment/locale/gl.js",
-	"./gl.js": "./node_modules/moment/locale/gl.js",
-	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
-	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
-	"./gu": "./node_modules/moment/locale/gu.js",
-	"./gu.js": "./node_modules/moment/locale/gu.js",
-	"./he": "./node_modules/moment/locale/he.js",
-	"./he.js": "./node_modules/moment/locale/he.js",
-	"./hi": "./node_modules/moment/locale/hi.js",
-	"./hi.js": "./node_modules/moment/locale/hi.js",
-	"./hr": "./node_modules/moment/locale/hr.js",
-	"./hr.js": "./node_modules/moment/locale/hr.js",
-	"./hu": "./node_modules/moment/locale/hu.js",
-	"./hu.js": "./node_modules/moment/locale/hu.js",
-	"./hy-am": "./node_modules/moment/locale/hy-am.js",
-	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
-	"./id": "./node_modules/moment/locale/id.js",
-	"./id.js": "./node_modules/moment/locale/id.js",
-	"./is": "./node_modules/moment/locale/is.js",
-	"./is.js": "./node_modules/moment/locale/is.js",
-	"./it": "./node_modules/moment/locale/it.js",
-	"./it.js": "./node_modules/moment/locale/it.js",
-	"./ja": "./node_modules/moment/locale/ja.js",
-	"./ja.js": "./node_modules/moment/locale/ja.js",
-	"./jv": "./node_modules/moment/locale/jv.js",
-	"./jv.js": "./node_modules/moment/locale/jv.js",
-	"./ka": "./node_modules/moment/locale/ka.js",
-	"./ka.js": "./node_modules/moment/locale/ka.js",
-	"./kk": "./node_modules/moment/locale/kk.js",
-	"./kk.js": "./node_modules/moment/locale/kk.js",
-	"./km": "./node_modules/moment/locale/km.js",
-	"./km.js": "./node_modules/moment/locale/km.js",
-	"./kn": "./node_modules/moment/locale/kn.js",
-	"./kn.js": "./node_modules/moment/locale/kn.js",
-	"./ko": "./node_modules/moment/locale/ko.js",
-	"./ko.js": "./node_modules/moment/locale/ko.js",
-	"./ky": "./node_modules/moment/locale/ky.js",
-	"./ky.js": "./node_modules/moment/locale/ky.js",
-	"./lb": "./node_modules/moment/locale/lb.js",
-	"./lb.js": "./node_modules/moment/locale/lb.js",
-	"./lo": "./node_modules/moment/locale/lo.js",
-	"./lo.js": "./node_modules/moment/locale/lo.js",
-	"./lt": "./node_modules/moment/locale/lt.js",
-	"./lt.js": "./node_modules/moment/locale/lt.js",
-	"./lv": "./node_modules/moment/locale/lv.js",
-	"./lv.js": "./node_modules/moment/locale/lv.js",
-	"./me": "./node_modules/moment/locale/me.js",
-	"./me.js": "./node_modules/moment/locale/me.js",
-	"./mi": "./node_modules/moment/locale/mi.js",
-	"./mi.js": "./node_modules/moment/locale/mi.js",
-	"./mk": "./node_modules/moment/locale/mk.js",
-	"./mk.js": "./node_modules/moment/locale/mk.js",
-	"./ml": "./node_modules/moment/locale/ml.js",
-	"./ml.js": "./node_modules/moment/locale/ml.js",
-	"./mn": "./node_modules/moment/locale/mn.js",
-	"./mn.js": "./node_modules/moment/locale/mn.js",
-	"./mr": "./node_modules/moment/locale/mr.js",
-	"./mr.js": "./node_modules/moment/locale/mr.js",
-	"./ms": "./node_modules/moment/locale/ms.js",
-	"./ms-my": "./node_modules/moment/locale/ms-my.js",
-	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
-	"./ms.js": "./node_modules/moment/locale/ms.js",
-	"./mt": "./node_modules/moment/locale/mt.js",
-	"./mt.js": "./node_modules/moment/locale/mt.js",
-	"./my": "./node_modules/moment/locale/my.js",
-	"./my.js": "./node_modules/moment/locale/my.js",
-	"./nb": "./node_modules/moment/locale/nb.js",
-	"./nb.js": "./node_modules/moment/locale/nb.js",
-	"./ne": "./node_modules/moment/locale/ne.js",
-	"./ne.js": "./node_modules/moment/locale/ne.js",
-	"./nl": "./node_modules/moment/locale/nl.js",
-	"./nl-be": "./node_modules/moment/locale/nl-be.js",
-	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
-	"./nl.js": "./node_modules/moment/locale/nl.js",
-	"./nn": "./node_modules/moment/locale/nn.js",
-	"./nn.js": "./node_modules/moment/locale/nn.js",
-	"./pa-in": "./node_modules/moment/locale/pa-in.js",
-	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
-	"./pl": "./node_modules/moment/locale/pl.js",
-	"./pl.js": "./node_modules/moment/locale/pl.js",
-	"./pt": "./node_modules/moment/locale/pt.js",
-	"./pt-br": "./node_modules/moment/locale/pt-br.js",
-	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
-	"./pt.js": "./node_modules/moment/locale/pt.js",
-	"./ro": "./node_modules/moment/locale/ro.js",
-	"./ro.js": "./node_modules/moment/locale/ro.js",
-	"./ru": "./node_modules/moment/locale/ru.js",
-	"./ru.js": "./node_modules/moment/locale/ru.js",
-	"./sd": "./node_modules/moment/locale/sd.js",
-	"./sd.js": "./node_modules/moment/locale/sd.js",
-	"./se": "./node_modules/moment/locale/se.js",
-	"./se.js": "./node_modules/moment/locale/se.js",
-	"./si": "./node_modules/moment/locale/si.js",
-	"./si.js": "./node_modules/moment/locale/si.js",
-	"./sk": "./node_modules/moment/locale/sk.js",
-	"./sk.js": "./node_modules/moment/locale/sk.js",
-	"./sl": "./node_modules/moment/locale/sl.js",
-	"./sl.js": "./node_modules/moment/locale/sl.js",
-	"./sq": "./node_modules/moment/locale/sq.js",
-	"./sq.js": "./node_modules/moment/locale/sq.js",
-	"./sr": "./node_modules/moment/locale/sr.js",
-	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr.js": "./node_modules/moment/locale/sr.js",
-	"./ss": "./node_modules/moment/locale/ss.js",
-	"./ss.js": "./node_modules/moment/locale/ss.js",
-	"./sv": "./node_modules/moment/locale/sv.js",
-	"./sv.js": "./node_modules/moment/locale/sv.js",
-	"./sw": "./node_modules/moment/locale/sw.js",
-	"./sw.js": "./node_modules/moment/locale/sw.js",
-	"./ta": "./node_modules/moment/locale/ta.js",
-	"./ta.js": "./node_modules/moment/locale/ta.js",
-	"./te": "./node_modules/moment/locale/te.js",
-	"./te.js": "./node_modules/moment/locale/te.js",
-	"./tet": "./node_modules/moment/locale/tet.js",
-	"./tet.js": "./node_modules/moment/locale/tet.js",
-	"./tg": "./node_modules/moment/locale/tg.js",
-	"./tg.js": "./node_modules/moment/locale/tg.js",
-	"./th": "./node_modules/moment/locale/th.js",
-	"./th.js": "./node_modules/moment/locale/th.js",
-	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
-	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
-	"./tlh": "./node_modules/moment/locale/tlh.js",
-	"./tlh.js": "./node_modules/moment/locale/tlh.js",
-	"./tr": "./node_modules/moment/locale/tr.js",
-	"./tr.js": "./node_modules/moment/locale/tr.js",
-	"./tzl": "./node_modules/moment/locale/tzl.js",
-	"./tzl.js": "./node_modules/moment/locale/tzl.js",
-	"./tzm": "./node_modules/moment/locale/tzm.js",
-	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm.js": "./node_modules/moment/locale/tzm.js",
-	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
-	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
-	"./uk": "./node_modules/moment/locale/uk.js",
-	"./uk.js": "./node_modules/moment/locale/uk.js",
-	"./ur": "./node_modules/moment/locale/ur.js",
-	"./ur.js": "./node_modules/moment/locale/ur.js",
-	"./uz": "./node_modules/moment/locale/uz.js",
-	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
-	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
-	"./uz.js": "./node_modules/moment/locale/uz.js",
-	"./vi": "./node_modules/moment/locale/vi.js",
-	"./vi.js": "./node_modules/moment/locale/vi.js",
-	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
-	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
-	"./yo": "./node_modules/moment/locale/yo.js",
-	"./yo.js": "./node_modules/moment/locale/yo.js",
-	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
-	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./node_modules/moment/locale recursive ^\\.\\/.*$";
-
-/***/ }),
-
 /***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./node_modules/sass-loader/lib/loader.js??ref--8-3!./resources/assets/sass/app.scss":
 /***/ (function(module, exports) {
 
@@ -296,7 +27,7 @@ webpackEmptyAsyncContext.id = "./resources/assets/angular/$$_lazy_route_resource
 /***/ "./resources/assets/angular/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\r\n\r\n<app-footer></app-footer>\r\n"
+module.exports = "<app-header></app-header>\r\n<router-outlet></router-outlet>\r\n<app-footer></app-footer>\r\n"
 
 /***/ }),
 
@@ -363,38 +94,19 @@ var table_1 = __webpack_require__("./node_modules/@angular/cdk/esm5/table.es5.js
 var angular_cc_library_1 = __webpack_require__("./node_modules/angular-cc-library/index.js");
 __webpack_require__("./resources/assets/sass/app.scss");
 __webpack_require__("./resources/assets/sass/_variables.scss");
-var core_2 = __webpack_require__("./node_modules/@angular/material/esm5/core.es5.js");
-var material_moment_adapter_1 = __webpack_require__("./node_modules/@angular/material-moment-adapter/esm5/material-moment-adapter.es5.js");
 var material_1 = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
 var http_2 = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
 //routesnpm install --save @angular/animations
 var app_routes_1 = __webpack_require__("./resources/assets/angular/app/app.routes.ts");
 var ngx_toastr_1 = __webpack_require__("./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
 //services
-var tour_service_1 = __webpack_require__("./resources/assets/angular/app/services/tours/tour.service.ts");
-var booking_service_1 = __webpack_require__("./resources/assets/angular/app/services/booking/booking.service.ts");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var contact_service_1 = __webpack_require__("./resources/assets/angular/app/services/contact/contact.service.ts");
-var checkout_service_1 = __webpack_require__("./resources/assets/angular/app/services/checkout/checkout.service.ts");
-var rider_service_1 = __webpack_require__("./resources/assets/angular/app/services/riders/rider.service.ts");
-var creditcard_service_1 = __webpack_require__("./resources/assets/angular/app/services/creditCard/creditcard.service.ts");
-var setting_service_1 = __webpack_require__("./resources/assets/angular/app/services/setting/setting.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
+var products_category_services_1 = __webpack_require__("./resources/assets/angular/app/services/products_category.services.ts");
 //components
 var app_component_1 = __webpack_require__("./resources/assets/angular/app/app.component.ts");
 var header_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.ts");
 var footer_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/footer/footer.component.ts");
-var tours_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/tours/tours.component.ts");
-var tour_detail_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.ts");
-var home_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.ts");
-var booking_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/booking/booking.component.ts");
-var page_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/page/page.component.ts");
-var social_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/social/social.component.ts");
-var checkout_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/checkout/checkout.component.ts");
-var riders_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/riders/riders/riders.component.ts");
-var creditcard_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.ts");
-var success_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/success/success.component.ts");
-var reloadpage_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.ts");
+var products_category_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.ts");
+var product_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -404,17 +116,8 @@ var AppModule = /** @class */ (function () {
                 app_component_1.AppComponent,
                 header_component_1.HeaderComponent,
                 footer_component_1.FooterComponent,
-                tours_component_1.ToursComponent,
-                tour_detail_component_1.TourDetailComponent,
-                home_component_1.HomeComponent,
-                booking_component_1.BookingComponent,
-                page_component_1.PageComponent,
-                social_component_1.SocialComponent,
-                checkout_component_1.CheckoutComponent,
-                riders_component_1.RidersComponent,
-                creditcard_component_1.CreditcardComponent,
-                success_component_1.SuccessComponent,
-                reloadpage_component_1.ReloadpageComponent,
+                products_category_component_1.ProductsCategoryComponent,
+                product_component_1.ProductComponent,
             ],
             imports: [
                 animations_1.BrowserAnimationsModule,
@@ -505,18 +208,7 @@ var AppModule = /** @class */ (function () {
                 material_1.MatTooltipModule,
             ],
             providers: [
-                tour_service_1.TourService,
-                booking_service_1.BookingService,
-                page_service_1.PageService,
-                contact_service_1.ContactService,
-                checkout_service_1.CheckoutService,
-                rider_service_1.RiderService,
-                creditcard_service_1.CreditCardService,
-                { provide: core_2.MAT_DATE_LOCALE, useValue: 'en-GB' },
-                { provide: core_2.DateAdapter, useClass: material_moment_adapter_1.MomentDateAdapter, deps: [core_2.MAT_DATE_LOCALE] },
-                { provide: core_2.MAT_DATE_FORMATS, useValue: material_moment_adapter_1.MAT_MOMENT_DATE_FORMATS },
-                setting_service_1.SettingService,
-                metaTag_service_1.MetaTagService
+                products_category_services_1.ProductsCategoryService
             ],
             bootstrap: [app_component_1.AppComponent]
         })
@@ -534,454 +226,37 @@ exports.AppModule = AppModule;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var tours_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/tours/tours.component.ts");
-var tour_detail_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.ts");
-var home_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.ts");
-var booking_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/booking/booking.component.ts");
-var page_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/page/page.component.ts");
-var checkout_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/checkout/checkout.component.ts");
+var products_category_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.ts");
+var product_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.ts");
 exports.appRoutes = [
-    // {
-    //     path: '',
-    //     redirectTo: '/home',
-    //     pathMatch: 'full'
-    // },
     {
-        path: '',
-        component: home_component_1.HomeComponent
+        path: 'product-category/:id',
+        component: products_category_component_1.ProductsCategoryComponent
     },
     {
-        path: 'tours',
-        component: tours_component_1.ToursComponent
-    },
-    {
-        path: 'tours/:id/:slug',
-        component: tour_detail_component_1.TourDetailComponent,
-    },
-    {
-        path: 'tours/:id/booking/:slug',
-        component: booking_component_1.BookingComponent
-    },
-    {
-        path: 'page/:name',
-        component: page_component_1.PageComponent
-    },
-    {
-        path: 'checkout',
-        component: checkout_component_1.CheckoutComponent
+        path: 'product/:id',
+        component: product_component_1.ProductComponent
     }
 ];
 
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/booking/booking.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-reloadpage [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div #elementDescription [hidden]=\"true\"></div>\r\n\r\n<!-- End tour-header -->\r\n<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-8\">\r\n        <h3 class=\"title\">{{ detailTour?.item.title }}</h3>\r\n        <!-- PRICE -->\r\n        <div class=\"tour-content-detail\">\r\n          <ul class=\"unstyled\">\r\n            <!--<li><b>From USD</b></li>-->\r\n            <li><h4>${{ detailTour?.price_normal|number:'1.0-3' }} USD per person</h4>\r\n            <li>\r\n              <strong>Duration:</strong> {{ detailTour?.duration }} Days\r\n            </li>\r\n            <li>\r\n              <strong>Location</strong>: Nha Trang, Vietnam\r\n            </li>\r\n           </ul>\r\n          <!--<div class=\"description-tour\">-->\r\n            <!--<p #dataContainer></p>-->\r\n          <!--</div>-->\r\n        </div>\r\n        <!-- END PRICE -->\r\n    </div>\r\n\r\n    <!-- BOOKING-FORM -->\r\n    <div class=\"col-md-4\">\r\n      <!-- TOUR-BOOKING-FORM -->\r\n      <div class=\"tour-booking-form\">\r\n        <h3>Booking</h3>\r\n        <form [formGroup] = \"frmBooking\" (ngSubmit)=\"onSubmitBooking()\">\r\n          <div class=\"form-group\">\r\n            <mat-form-field>\r\n              <mat-select id=\"numberRider\" [(value)]=\"riders\" (change)=\"getQuantityRider($event)\">\r\n                  <mat-option *ngFor = \"let number of numbers;\" value=\"{{number}}\" >{{number}} person</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n\r\n          <mat-form-field *ngIf = \"!type_tour\" class=\"datecheck\">\r\n              <mat-select [(ngModel)]=\"dates\" name=\"dates\" placeholder = \"Tour start date\" id=\"dates\" name=\"dates\" formControlName=\"dates\">\r\n                  <mat-option value=\"{{ date.date }} - {{ date.month}}\" *ngFor = \" let date of detailTour?.dates \">{{ date.date }} - {{ date.month }}</mat-option>\r\n              </mat-select>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field *ngIf = \"type_tour\" class=\"datecheck\">\r\n            <input matInput [(ngModel)]=\"dates\" type=\"date\" placeholder=\"Tour start date\" formControlName=\"dates\" required>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field style=\" width: 60%;\"  [hidden] = \"checkClick\">\r\n              <input  matInput placeholder=\"Promotion Code \" [(ngModel)]=\"codePromotion\"  formControlName=\"code\" >\r\n          </mat-form-field>\r\n\r\n          <button class=\"btncheck\" [hidden] = \"checkClick\" (click)=\"changeTotalPrice()\"  mat-raised-button color=\"warn\">CHECK</button>\r\n          <div class=\"d-flex justify-content-center align-items-center container \">\r\n            <div class=\"row \">\r\n              {{message}}\r\n              <label class=\"otherCode\" style=\"float: right; color: red\" [hidden] = \"!checkClick\" (click)=\"showFormCode()\"> . Enter other code</label>\r\n            </div>\r\n          </div>\r\n\r\n          <mat-radio-group formControlName = \"pay_type\" style=\"margin: 1rem 0;display: block\" #event (change) = \"onChange()\">\r\n            <mat-radio-button [value] = \"0\" [checked] =\" true\"> Pay Deposit (80 %)  </mat-radio-button>\r\n            <mat-radio-button [value] = \"1\"> Full Amount Now </mat-radio-button>\r\n          </mat-radio-group>\r\n\r\n          <div class=\"total form-group\">\r\n              <b>Total (USD) </b>\r\n              <b  style=\"float: right; font-size: 20px;\"> $ {{ totalPrice |number:'1.0-3' }} </b>\r\n\r\n          </div>\r\n\r\n          <div>\r\n                <button style=\"width: 100%;margin-top: 1rem\" (click)=\"getDataFormBooking()\" [disabled] = \"frmBooking.invalid\"  mat-raised-button color=\"warn\"  [routerLink] = \"['/checkout']\">BOOK NOW</button>\r\n          </div>\r\n        </form>\r\n      </div>\r\n      <!-- END TOUR-BOOKING-FORM -->\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/booking/booking.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ".title {\n  text-transform: capitalize;\n  font-weight: bold;\n  margin-top: 20px;\n  margin-bottom: 10px; }\n\nh2 {\n  color: #7f0000; }\n\n.slider {\n  margin-top: 10px; }\n\n.slider a img {\n  height: 100px;\n  -o-object-fit: cover;\n     object-fit: cover; }\n\n.carousel-item {\n  padding: 0;\n  border: 1px solid #fff; }\n\ni {\n  color: #fff !important; }\n\nul li {\n  list-style: none;\n  font-size: 1rem; }\n\n.unstyled {\n  padding: 0; }\n\n.tour-content-detail {\n  margin-top: 2rem; }\n\n.btncheck {\n  float: right;\n  margin-top: 5px;\n  background-color: unset;\n  color: black; }\n\n.datecheck {\n  margin-bottom: 1rem; }\n\n.description-tour {\n  margin-top: 20px; }\n\np {\n  margin-top: 30px; }\n\n@media (max-width: 767px) {\n  .slider img {\n    height: 200px !important;\n    width: 300px; } }\n\n/* tour-booking-form */\n\n.tour-booking-form {\n  margin: 1rem 0 2rem 0;\n  border: 1px solid #b43c3c;\n  height: auto; }\n\n.tour-booking-form h3 {\n  position: relative;\n  text-transform: capitalize;\n  background-color: #7f0000;\n  padding: 1rem;\n  color: #fff; }\n\n.tour-booking-form h3::after {\n  content: '';\n  width: 0;\n  height: 0;\n  border-left: 10px solid transparent;\n  border-right: 10px solid transparent;\n  position: absolute;\n  bottom: -10px;\n  left: 15px; }\n\n.tour-booking-form form {\n  padding: 20px; }\n\n.required {\n  color: red;\n  display: inline-block;\n  margin-left: -3px; }\n\n.tour-booking-form a {\n  color: #fff; }\n\n.map {\n  margin-top: 30px; }\n\n.btn-contactus {\n  background-color: #b43c3c;\n  margin-top: 30px;\n  padding: 10px 5% 8px;\n  padding-top: 5px;\n  padding-right: 5%;\n  padding-bottom: 8px;\n  padding-left: 5%;\n  color: #fff;\n  text-align: left;\n  border-radius: 0rem;\n  font-weight: bold; }\n\n.side-column a.btn-contactus:link {\n  background: transparent url(\"/images/icons/mail-01.png\") no-repeat right center;\n  background-color: #b43c3c;\n  width: 100%;\n  display: block;\n  padding: 10px 5% 8px;\n  text-align: left;\n  color: #fff;\n  font-weight: bold;\n  outline: none; }\n\na {\n  text-decoration: none; }\n\n.modal-header {\n  border-bottom: none !important; }\n\n.modal-body {\n  padding: inherit; }\n\n.modal-content {\n  height: auto;\n  position: absolute;\n  opacity: 1;\n  overflow: visible;\n  display: block;\n  padding-left: 20px;\n  padding-right: 20px; }\n\nselect, input[type=\"text\"], textarea {\n  width: 100%; }\n\n.col-2 {\n  width: auto; }\n\n.form-group.row {\n  margin-left: 5px;\n  margin-right: 10px; }\n\n.input-xlarge {\n  float: right; }\n\ninput[type=\"text\"], textarea:focus {\n  outline: none; }\n\n.control-label {\n  padding-top: 5px;\n  text-align: right; }\n\n.btn-submit {\n  background-color: #b43c3c;\n  text-align: center;\n  margin-bottom: 100px; }\n\n.help-block {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n\n.form-actions {\n  margin-bottom: 50px;\n  margin-right: 30%;\n  margin-left: 30%; }\n\nfieldset {\n  padding: 0;\n  padding-top: 0px;\n  padding-right: 0px;\n  padding-bottom: 0px;\n  padding-left: 0px;\n  margin: 0;\n  margin-top: 0px;\n  margin-right: 0px;\n  margin-bottom: 0px;\n  margin-left: 0px;\n  border: 0;\n  border-top-color: initial;\n  border-top-style: initial;\n  border-top-width: 0px;\n  border-right-color: initial;\n  border-right-style: initial;\n  border-right-width: 0px;\n  border-bottom-color: initial;\n  border-bottom-style: initial;\n  border-bottom-width: 0px;\n  border-left-color: initial;\n  border-left-style: initial;\n  border-left-width: 0px;\n  border-image-source: initial;\n  border-image-slice: initial;\n  border-image-width: initial;\n  border-image-outset: initial;\n  border-image-repeat: initial; }\n\nfieldset {\n  display: block;\n  -webkit-margin-start: 2px;\n  -webkit-margin-end: 2px;\n  -webkit-padding-before: 0.35em;\n  -webkit-padding-start: 0.75em;\n  -webkit-padding-end: 0.75em;\n  -webkit-padding-after: 0.625em;\n  min-width: -webkit-min-content;\n  border-style: groove;\n  border-top-style: groove;\n  border-right-style: groove;\n  border-bottom-style: groove;\n  border-left-style: groove;\n  border-color: threedface;\n  border-top-color: threedface;\n  border-right-color: threedface;\n  border-bottom-color: threedface;\n  border-left-color: threedface;\n  -o-border-image: initial;\n     border-image: initial;\n  border-image-source: initial;\n  border-image-slice: initial;\n  border-image-width: initial;\n  border-image-outset: initial;\n  border-image-repeat: initial; }\n\n.ng-valid[required], .ng-valid.required {\n  border-left: 5px solid #42A948;\n  /* green */ }\n\nmat-form-field {\n  width: 100%; }\n\nmat-radio-button {\n  margin-right: 10px !important; }\n\n.note {\n  margin-top: 20px; }\n\n.otherCode:hover {\n  cursor: pointer;\n  -webkit-text-decoration-style: inherit;\n          text-decoration-style: inherit; }\n\n.tour-header {\n  background: rgba(187, 0, 0, 0.9);\n  text-transform: uppercase;\n  text-align: center;\n  padding: 3rem 1rem;\n  font-size: 2.4rem;\n  color: #fff; }\n\n.ng-valid {\n  border-left: none !important; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/booking/booking.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var common_1 = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var platform_browser_2 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-//services
-var tour_service_1 = __webpack_require__("./resources/assets/angular/app/services/tours/tour.service.ts");
-var contact_service_1 = __webpack_require__("./resources/assets/angular/app/services/contact/contact.service.ts");
-var booking_service_1 = __webpack_require__("./resources/assets/angular/app/services/booking/booking.service.ts");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var checkout_service_1 = __webpack_require__("./resources/assets/angular/app/services/checkout/checkout.service.ts");
-var events_1 = __webpack_require__("./node_modules/events/events.js");
-var setting_service_1 = __webpack_require__("./resources/assets/angular/app/services/setting/setting.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
-var BookingComponent = /** @class */ (function () {
-    function BookingComponent(_formBuilder, storage, route, http, _tourService, _bookingService, _contactservice, location, _pageService, _checkoutService, titleService, metaService, _settingService, sanitizer, _metaTagService) {
-        this._formBuilder = _formBuilder;
-        this.storage = storage;
-        this.route = route;
-        this.http = http;
-        this._tourService = _tourService;
-        this._bookingService = _bookingService;
-        this._contactservice = _contactservice;
-        this.location = location;
-        this._pageService = _pageService;
-        this._checkoutService = _checkoutService;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this._settingService = _settingService;
-        this.sanitizer = sanitizer;
-        this._metaTagService = _metaTagService;
-        this.myEvent = new events_1.EventEmitter;
-        this.numbers = [];
-        this.buttonDisable = true;
-        this.checkClick = false;
-        this.checkMessage = false;
-        this.submitted = false;
-        this.defaultURL = window.location.href;
-        this.createForm();
-        this.linkMap = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.155727953794!2d109.18581321454766!3d12.237733033866988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31705d8787fc06ab%3A0x6ad7fbaafbf4f0de!2zOTUgTmfDtCDEkOG7qWMgS-G6vywgVGjDoG5oIHBo4buRIE5oYSBUcmFuZywgS2jDoW5oIEjDsmEgNjUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1524213001248';
-        this.defaultIframe = this.sanitizer.bypassSecurityTrustResourceUrl(this.linkMap);
-        this.getDataSetting();
-    }
-    // loadData(data) {
-    //  this.dataContainer.nativeElement.innerHTML = data;
-    //  }
-    BookingComponent.prototype.loadDataDescription = function (data) {
-        this.elementDescription.nativeElement.innerHTML = data;
-    };
-    BookingComponent.prototype.getDetailTour = function () {
-        var _this = this;
-        var id = +this.route.snapshot.paramMap.get('id');
-        this._tourService.getDetailTour(id).subscribe(function (res) {
-            _this.detailTour = res;
-            if (_this.detailTour['type_tour'] == 1) {
-                _this.type_tour = _this.detailTour['type_tour'];
-            }
-            _this.checkMessage = true;
-            _this.keywords = "lbmt,Tour, travel";
-            _this.title = _this.detailTour['item'].title;
-            _this.description = _this.detailTour['item'].summary;
-            _this.image = _this.detailTour.image;
-            // this.loadData(this.detailTour['item'].description);
-            _this.loadDataDescription(_this.description);
-            _this.element = _this.elementDescription.nativeElement.textContent;
-            _this.titleService.setTitle(_this.title);
-            _this._metaTagService.getDataMetaTags(_this.title, _this.element, _this.image, _this.keywords, _this.defaultURL);
-            for (var i = _this.detailTour.min_rider; i <= _this.detailTour.max_rider; i++) {
-                _this.numbers.push(i);
-            }
-            _this.riders = _this.numbers[0].toString();
-            var data = _this.detailTour.price_normal;
-            _this.rider = +_this.riders;
-            _this.totalPrice = (data * _this.rider * 80) / 100;
-        });
-    };
-    BookingComponent.prototype.getQuantityRider = function (event) {
-        this.selectRider = true;
-        var data = this.detailTour.price_normal;
-        this.rider = +this.riders;
-        if (this.code == undefined && this.frmBooking.value.pay_type == 0) {
-            this.totalPrice = (data * this.rider);
-            this.totalPrice = this.totalPrice * 80 / 100;
-        }
-        if (this.code == undefined && this.frmBooking.value.pay_type == 1) {
-            this.totalPrice = (data * this.rider);
-            this.totalPrice = this.totalPrice;
-        }
-        if (this.code != undefined && this.frmBooking.value.pay_type == 0) {
-            this.totalPrice = (data * this.rider) * (100 - this.code) / 100;
-            this.totalPrice = this.totalPrice * 80 / 100;
-        }
-        if (this.code != undefined && this.frmBooking.value.pay_type == 1) {
-            this.totalPrice = (data * this.rider) * (100 - this.code) / 100;
-        }
-    };
-    BookingComponent.prototype.changeTotalPrice = function () {
-        var _this = this;
-        var dataCheckPromotion = {
-            "id": +this.route.snapshot.paramMap.get('id'),
-            "code": this.frmBooking.value.code
-        };
-        this._checkoutService.checkPromotion(dataCheckPromotion).subscribe(function (res) {
-            _this.code = res;
-            if (_this.code != 0) {
-                _this.checkClick = true;
-                _this.message = "sales : " + _this.frmBooking.value.code + ' ' + _this.code + "%";
-                _this.totalPrice = (_this.totalPrice * 100 / 80) * (100 - _this.code) / 100;
-                _this.totalPrice = _this.totalPrice * 80 / 100;
-                _this.codePromotion = '';
-            }
-            else {
-                _this.message = "Code promotion is not valid";
-            }
-        });
-    };
-    BookingComponent.prototype.showFormCode = function () {
-        this.checkClick = !this.checkClick;
-        this.totalPrice = this.totalPrice * 100 / (100 - this.code);
-    };
-    BookingComponent.prototype.onChange = function () {
-        if (this.frmBooking.value.pay_type == 0) {
-            this.totalPrice = this.totalPrice * 80 / 100;
-        }
-        if (this.frmBooking.value.pay_type == 1) {
-            this.totalPrice = this.totalPrice * 100 / 80;
-        }
-    };
-    BookingComponent.prototype.getDataFormBooking = function () {
-        if (this.frmBooking.value.code == undefined) {
-            this.setCode = '';
-        }
-        else {
-            this.setCode = this.frmBooking.value.code;
-        }
-        if (this.detailTour == undefined)
-            return '--';
-        var id = this.detailTour.id;
-        var data = {
-            "item_id": id,
-            "image": this.detailTour.image,
-            "rider": +this.riders,
-            "date": this.dates,
-            "price": this.detailTour.price_normal,
-            "name": this.detailTour['item'].title,
-            "pay_type": this.frmBooking.value.pay_type,
-            "code": this.setCode,
-            "promotion": this.code,
-            "totalPrice": this.totalPrice,
-        };
-        this.storage.set('dataBooking', data);
-    };
-    BookingComponent.prototype.createForm = function () {
-        this.frmcontact = this._formBuilder.group({
-            firstname: ['', [forms_1.Validators.required]],
-            lastname: ['', [forms_1.Validators.required]],
-            email: ['', [forms_1.Validators.required, forms_1.Validators.pattern("[a-zA-Z0-9._-]+[@]+[a-zA-Z0-9-]+[.]+[a-zA-Z]{2,6}")]],
-            phone: ['', [forms_1.Validators.required]],
-            message: ['', [forms_1.Validators.required]]
-        });
-        this.frmBooking = this._formBuilder.group({
-            numberRider: [''],
-            dates: ['', [forms_1.Validators.required]],
-            code: [''],
-            pay_type: ['0']
-        });
-    };
-    BookingComponent.prototype.onSubmitContact = function () {
-        this.submitted = true;
-        this.dataContact = this.frmcontact.value;
-        this._contactservice.addContact(this.dataContact)
-            .subscribe(function (contact) { return JSON.stringify(contact); });
-    };
-    BookingComponent.prototype.onSubmitBooking = function () {
-        this.submitted = true;
-    };
-    BookingComponent.prototype.onResetForm = function () {
-        this.submitted = false;
-        this.frmcontact.reset();
-    };
-    BookingComponent.prototype.ngOnInit = function () {
-        this._bookingService.loadScript('/js/slider.js');
-        window.document.getElementById('title').innerText = this.route.snapshot.data['title'];
-        this.getDetailTour();
-    };
-    BookingComponent.prototype.getDataSetting = function () {
-        var _this = this;
-        this._settingService.getSetting('google_map_iframe').subscribe(function (res) {
-            _this.dataSetting = res;
-            if (_this.dataSetting) {
-                _this.defaultURL = _this.dataSetting.value;
-                _this.map = _this.sanitizer.bypassSecurityTrustResourceUrl(_this.dataSetting);
-            }
-            else {
-                _this.map = _this.defaultIframe;
-            }
-        });
-    };
-    __decorate([
-        core_1.Output(),
-        __metadata("design:type", typeof (_a = typeof events_1.EventEmitter !== "undefined" && events_1.EventEmitter) === "function" && _a || Object)
-    ], BookingComponent.prototype, "myEvent", void 0);
-    __decorate([
-        core_1.ViewChild('elementDescription'),
-        __metadata("design:type", core_1.ElementRef)
-    ], BookingComponent.prototype, "elementDescription", void 0);
-    BookingComponent = __decorate([
-        core_1.Component({
-            selector: 'app-booking',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/booking/booking.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/booking/booking.component.scss")]
-        }),
-        __param(1, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            angular_webstorage_service_1.WebStorageService,
-            router_1.ActivatedRoute,
-            http_1.HttpClient,
-            tour_service_1.TourService,
-            booking_service_1.BookingService,
-            contact_service_1.ContactService,
-            common_1.Location,
-            page_service_1.PageService,
-            checkout_service_1.CheckoutService,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
-            setting_service_1.SettingService,
-            platform_browser_2.DomSanitizer,
-            metaTag_service_1.MetaTagService])
-    ], BookingComponent);
-    return BookingComponent;
-    var _a;
-}());
-exports.BookingComponent = BookingComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/checkout/checkout.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-reloadpage [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div class=\"container\">\r\n  <mat-horizontal-stepper [linear]=\"true\" #stepper (selectionChange)=\"selectionChange($event)\">\r\n    <mat-step [completed]=\"_riderService.isValid\"  [editable]=\"_riderService.isValid\">\r\n      <ng-template matStepLabel>RIDERS</ng-template>\r\n        <app-riders (next)=\"stepper.next($event)\"></app-riders>\r\n    </mat-step>\r\n\r\n    <mat-step [completed]=\"_creditCardService.isNext\" [editable]=\"_creditCardService.isNext\">\r\n        <ng-template matStepLabel>CREDIT CARD DETAILS </ng-template>\r\n          <app-creditcard (next)=\"stepper.next($event)\"></app-creditcard>\r\n      </mat-step>\r\n\r\n    <mat-step>\r\n      <ng-template matStepLabel>SUCCESS!</ng-template>\r\n      <h1 class=\"text-center\">You are booking tour success!</h1>\r\n      <app-success></app-success>\r\n      <div class=\"d-flex justify-content-center align-items-center container continue \">\r\n        <div class=\"row \">\r\n          <a mat-raised-button color=\"warn\" href=\"/tours\"(click) = \"removeData()\">CONTINUE BOOK TOUR</a>\r\n        </div>\r\n        </div>\r\n    </mat-step>\r\n  </mat-horizontal-stepper>\r\n</div>\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/checkout/checkout.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "mat-form-field {\n  width: 100%; }\n\n.frm {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\nform {\n  margin-top: 20px; }\n\n.message {\n  margin-top: 10px;\n  margin-bottom: 20px; }\n\nh1 {\n  color: blue; }\n\n.continue {\n  margin-top: 20px;\n  float: right; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/checkout/checkout.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var material_1 = __webpack_require__("./node_modules/@angular/material/esm5/material.es5.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-// services 
-var checkout_service_1 = __webpack_require__("./resources/assets/angular/app/services/checkout/checkout.service.ts");
-var rider_service_1 = __webpack_require__("./resources/assets/angular/app/services/riders/rider.service.ts");
-var creditcard_service_1 = __webpack_require__("./resources/assets/angular/app/services/creditCard/creditcard.service.ts");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
-var CheckoutComponent = /** @class */ (function () {
-    function CheckoutComponent(http, titleService, metaService, _formBuilder, storage, _checkoutService, _riderService, _creditCardService, _pageService, _metaTagService) {
-        this.http = http;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this._formBuilder = _formBuilder;
-        this.storage = storage;
-        this._checkoutService = _checkoutService;
-        this._riderService = _riderService;
-        this._creditCardService = _creditCardService;
-        this._pageService = _pageService;
-        this._metaTagService = _metaTagService;
-        this.selectedIndex = 0;
-        this.checkMessage = false;
-        this.defaultURL = window.location.href;
-        this.getMetaTag();
-        this.dataTour = this.storage.get('dataBooking');
-    }
-    CheckoutComponent.prototype.getMetaTag = function () {
-        var _this = this;
-        var slug = 'checkout';
-        this._pageService.getMeta(slug).subscribe(function (res) {
-            _this.meta = res;
-            _this.title = _this.meta.title;
-            _this.image = _this.meta.image;
-            _this.description = _this.meta.description;
-            _this.keywords = _this.meta.keywords;
-            _this.titleService.setTitle(_this.title);
-            _this._metaTagService.getDataMetaTags(_this.title, _this.description, _this.image, _this.keywords, _this.defaultURL);
-        });
-    };
-    CheckoutComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        setTimeout(function () {
-            _this.checkMessage = true;
-        }, 500);
-    };
-    CheckoutComponent.prototype.selectionChange = function (e) {
-        if (e.selectedIndex == 2) {
-            this._creditCardService.isSubmit = false;
-        }
-    };
-    CheckoutComponent.prototype.removeData = function () {
-        this.storage.remove('card_id');
-        this.storage.remove('dataBooking');
-        this.storage.remove('riders');
-    };
-    __decorate([
-        core_1.ViewChild('stepper'),
-        __metadata("design:type", material_1.MatStepper)
-    ], CheckoutComponent.prototype, "stepper", void 0);
-    CheckoutComponent = __decorate([
-        core_1.Component({
-            selector: 'app-checkout',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/checkout/checkout.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/checkout/checkout.component.scss")]
-        }),
-        __param(4, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
-            forms_1.FormBuilder,
-            angular_webstorage_service_1.WebStorageService,
-            checkout_service_1.CheckoutService,
-            rider_service_1.RiderService,
-            creditcard_service_1.CreditCardService,
-            page_service_1.PageService,
-            metaTag_service_1.MetaTagService])
-    ], CheckoutComponent);
-    return CheckoutComponent;
-}());
-exports.CheckoutComponent = CheckoutComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/home/home.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "\r\n<section>\r\n    <div class=\"rev-slider\">\r\n        <div class=\"fullwidthbanner-container\">\r\n            <div class=\"fullwidthbanner\">\r\n                <div class=\"bannercontainer\" >\r\n                    <div class=\"banner\" >\r\n                        <ul>\r\n                            <!-- THE FIRST SLIDE -->\r\n                            <li data-transition=\"boxfade\" data-slotamount=\"20\" class=\"active-revslide\" style=\"width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;\">\r\n                                <div class=\"slotholder\" style=\"width:100%;height:100%;\" data-duration=\"undefined\" data-zoomstart=\"undefined\" data-zoomend=\"undefined\" data-rotationstart=\"undefined\" data-rotationend=\"undefined\" data-ease=\"undefined\" data-bgpositionend=\"undefined\" data-bgposition=\"undefined\" data-kenburns=\"undefined\" data-easeme=\"undefined\" data-bgfit=\"undefined\" data-bgfitend=\"undefined\" data-owidth=\"undefined\" data-oheight=\"undefined\">\r\n                                    <div class=\"tp-bgimg defaultimg\" data-lazyload=\"undefined\" data-bgfit=\"cover\" data-bgposition=\"center center\" data-bgrepeat=\"no-repeat\" data-lazydone=\"undefined\" src=\"/dest/images/thumbs/1.jpg\" data-src=\"dest/images/thumbs/1.jpg\" style=\"background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('assets/dest/images/thumbs/1.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;\">\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </li>\r\n                            <li data-transition=\"boxfade\" data-slotamount=\"20\" class=\"active-revslide\" style=\"width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;\">\r\n                                <div class=\"slotholder\" style=\"width:100%;height:100%;\" data-duration=\"undefined\" data-zoomstart=\"undefined\" data-zoomend=\"undefined\" data-rotationstart=\"undefined\" data-rotationend=\"undefined\" data-ease=\"undefined\" data-bgpositionend=\"undefined\" data-bgposition=\"undefined\" data-kenburns=\"undefined\" data-easeme=\"undefined\" data-bgfit=\"undefined\" data-bgfitend=\"undefined\" data-owidth=\"undefined\" data-oheight=\"undefined\">\r\n                                    <div class=\"tp-bgimg defaultimg\" data-lazyload=\"undefined\" data-bgfit=\"cover\" data-bgposition=\"center center\" data-bgrepeat=\"no-repeat\" data-lazydone=\"undefined\" src=\"dest/images/thumbs/1.jpg\" data-src=\"dest/images/thumbs/1.jpg\" style=\"background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('assets/dest/images/thumbs/1.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;\">\r\n                                    </div>\r\n                                </div>\r\n\r\n                            <li data-transition=\"boxfade\" data-slotamount=\"20\" class=\"active-revslide\" style=\"width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;\">\r\n                                <div class=\"slotholder\" style=\"width:100%;height:100%;\" data-duration=\"undefined\" data-zoomstart=\"undefined\" data-zoomend=\"undefined\" data-rotationstart=\"undefined\" data-rotationend=\"undefined\" data-ease=\"undefined\" data-bgpositionend=\"undefined\" data-bgposition=\"undefined\" data-kenburns=\"undefined\" data-easeme=\"undefined\" data-bgfit=\"undefined\" data-bgfitend=\"undefined\" data-owidth=\"undefined\" data-oheight=\"undefined\">\r\n                                    <div class=\"tp-bgimg defaultimg\" data-lazyload=\"undefined\" data-bgfit=\"cover\" data-bgposition=\"center center\" data-bgrepeat=\"no-repeat\" data-lazydone=\"undefined\" src=\"dest/images/thumbs/1.jpg\" data-src=\"dest/images/thumbs/1.jpg\" style=\"background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('assets/dest/images/thumbs/1.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;\">\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </li>\r\n\r\n                            <li data-transition=\"boxfade\" data-slotamount=\"20\" class=\"active-revslide current-sr-slide-visible\" style=\"width: 100%; height: 100%; overflow: hidden; visibility: inherit; opacity: 1; z-index: 20;\">\r\n                                <div class=\"slotholder\" style=\"width:100%;height:100%;\" data-duration=\"undefined\" data-zoomstart=\"undefined\" data-zoomend=\"undefined\" data-rotationstart=\"undefined\" data-rotationend=\"undefined\" data-ease=\"undefined\" data-bgpositionend=\"undefined\" data-bgposition=\"undefined\" data-kenburns=\"undefined\" data-easeme=\"undefined\" data-bgfit=\"undefined\" data-bgfitend=\"undefined\" data-owidth=\"undefined\" data-oheight=\"undefined\">\r\n                                    <div class=\"tp-bgimg defaultimg\" data-lazyload=\"undefined\" data-bgfit=\"cover\" data-bgposition=\"center center\" data-bgrepeat=\"no-repeat\" data-lazydone=\"undefined\" src=\"dest/images/thumbs/1.jpg\" data-src=\"dest/images/thumbs/1.jpg\" style=\"background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('assets/dest/images/thumbs/1.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit;\">\r\n                                    </div>\r\n                                </div>\r\n\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n\r\n                <div class=\"tp-bannertimer\"></div>\r\n            </div>\r\n        </div>\r\n        <!--slider-->\r\n    </div>\r\n</section>\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/home/home.component.scss":
+/***/ "./resources/assets/angular/app/components/pages/product/product.component.html":
 /***/ (function(module, exports) {
 
 module.exports = ""
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/home/home.component.ts":
+/***/ "./resources/assets/angular/app/components/pages/product/product.component.scss":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./resources/assets/angular/app/components/pages/product/product.component.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -998,390 +273,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var platform_browser_2 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var setting_service_1 = __webpack_require__("./resources/assets/angular/app/services/setting/setting.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
-var HomeComponent = /** @class */ (function () {
-    function HomeComponent(http, titleService, metaService, _pageService, _settingService, sanitizer, _metaTagService) {
-        this.http = http;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this._pageService = _pageService;
-        this._settingService = _settingService;
-        this.sanitizer = sanitizer;
-        this._metaTagService = _metaTagService;
-        this.checkMessage = false;
-        this.defaultURL = window.location.href;
-        this.instagram_link = 'https://instagram.com/luckybastardmotorcycletours';
-        this.linkMap = '//lightwidget.com/widgets/fcb5aa9556655c0b911bbbdb03c8f960.html';
-        this.defaultIframe = this.sanitizer.bypassSecurityTrustResourceUrl(this.linkMap);
-        this.getMetaTag();
-        this.getDataSetting();
-    }
-    HomeComponent.prototype.getMetaTag = function () {
-        var _this = this;
-        var slug = 'home';
-        this._pageService.getMeta(slug).subscribe(function (res) {
-            _this.meta = res;
-            _this.title = _this.meta.title;
-            _this.image = _this.meta.image;
-            _this.description = _this.meta.description;
-            _this.keywords = _this.meta.keywords;
-            _this._metaTagService.getDataMetaTags(_this.title, _this.description, _this.image, _this.keywords, _this.defaultURL);
-        });
-    };
-    HomeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        setTimeout(function () {
-            _this.checkMessage = true;
-        }, 500);
-    };
-    HomeComponent.prototype.getDataSetting = function () {
-        var _this = this;
-        this._settingService.getSetting('instagram_name').subscribe(function (res) {
-            _this.instagram_name = res;
-            if (_this.instagram_name) {
-                _this.name_instagram = _this.instagram_name;
-            }
-            else {
-                _this.name_instagram = '@luckybastardmotorcycletours';
-            }
-        });
-        this._settingService.getSetting('instagram_link').subscribe(function (res) {
-            _this.defaultInstagram_link = res;
-            if (_this.defaultInstagram_link) {
-                _this.link_instagram = _this.defaultInstagram_link;
-            }
-            else {
-                _this.link_instagram = _this.instagram_link;
-            }
-        });
-        this._settingService.getSetting('instagram_iframe').subscribe(function (res) {
-            _this.dataSetting = res;
-            if (_this.dataSetting) {
-                _this.map = _this.sanitizer.bypassSecurityTrustResourceUrl(_this.dataSetting);
-            }
-            else {
-                _this.map = _this.defaultIframe;
-            }
-        });
-        this._settingService.getSetting('instagram_button_name').subscribe(function (res) {
-            _this.instagram_button_name = res;
-            if (_this.instagram_button_name) {
-                _this.button_name = _this.instagram_button_name;
-            }
-            else {
-                _this.button_name = 'Follow on Instagram';
-            }
-        });
-    };
-    HomeComponent = __decorate([
-        core_1.Component({
-            selector: 'app-home',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.scss")]
-        }),
-        __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
-            page_service_1.PageService,
-            setting_service_1.SettingService,
-            platform_browser_2.DomSanitizer,
-            metaTag_service_1.MetaTagService])
-    ], HomeComponent);
-    return HomeComponent;
-}());
-exports.HomeComponent = HomeComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/page/page.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-reloadpage [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div class=\"page_header is-large\">\r\n  <div class=\"tour-list-header\" [style.background-image]=\"'url(images/' + page?.picture + ')'\" [style.background-color] = \"page?.background_color ? page?.background_color:'#bb0000'\">\r\n    <div class=\"overlay\">\r\n      <div class=\"container\">\r\n        <div class=\"columns is-marginless\">\r\n          <div class=\"column\">\r\n            <h1 [style.color] = \" page?.title_color ? page?.title_color : '#ffff' \" >{{ page?.title }}</h1>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"page_content\">\r\n  <div class=\"container\">\r\n    <div class=\"columns is-marginless\">\r\n      <div class=\"column content\" #dataContainer>\r\n      </div>\r\n      <div *ngIf = \"formContact\" class=\"form_contact\">\r\n\r\n        <div class=\"d-flex justify-content-center align-items-center container \">\r\n          <div class=\"row \">\r\n              <form [formGroup] = \"frmUser\" (ngSubmit)=\"onSubmitForm()\" class=\"frm\">\r\n                <h3>Get in Touch</h3>\r\n                  <mat-form-field>\r\n                    <input matInput placeholder=\"First Name\" formControlName=\"firstname\" required>\r\n                  </mat-form-field>\r\n                  <mat-form-field>\r\n                    <input matInput placeholder=\"Last Name\" formControlName=\"lastname\" required>\r\n                  </mat-form-field>\r\n                  <mat-form-field>\r\n                    <input matInput type=\"tel\" placeholder=\"Phone\" formControlName=\"phone\" required>\r\n                  </mat-form-field>\r\n                  <mat-form-field>\r\n                    <input matInput placeholder=\"Email\" formControlName=\"email\" required>\r\n                  </mat-form-field>\r\n                  <div class=\"alert alert-danger\" *ngIf = \"frmUser.controls.email.dirty && frmUser.controls.email.errors?.pattern\">Email is invalid</div>\r\n                  <mat-form-field>\r\n                    <input matInput placeholder=\"Message\" formControlName=\"message\" required>\r\n                  </mat-form-field>\r\n                  <div class=\"form-actions text-center\">\r\n                    <button id=\"sub\" [disabled] = \"frmUser.invalid\" class=\"btn btn-success\"> SEND YOUR MESSAGE</button>\r\n                  </div>\r\n              </form>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <app-social></app-social>\r\n  </div>\r\n</div>\r\n\r\n\r\n\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/page/page.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "page_header.is-large {\n  background-color: transparent;\n  background-repeat: no-repeat;\n  background-position-x: center;\n  background-position-y: top;\n  background-size: cover;\n  font-size: 4.2rem;\n  height: 400px; }\n\n.page_header {\n  color: #fff; }\n\n.tour-list-header {\n  background-position: center;\n  height: 400px; }\n\n.overlay {\n  background: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 1rem;\n  color: #fff;\n  font-size: 55px;\n  text-transform: uppercase;\n  text-align: center; }\n\n.page_content {\n  padding: 2rem 0; }\n\n.alert {\n  margin: 0;\n  margin-top: -1rem;\n  padding: 0.25rem 0.5rem;\n  border-radius: unset;\n  font-size: 0.8rem; }\n\n.information {\n  margin-top: 20px; }\n\nmat-form-field {\n  width: 100%; }\n\n.frm {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\nform {\n  margin-top: 20px; }\n\n#sub {\n  width: 100%; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/page/page.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var ngx_toastr_1 = __webpack_require__("./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
-//service
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var contact_service_1 = __webpack_require__("./resources/assets/angular/app/services/contact/contact.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
-var PageComponent = /** @class */ (function () {
-    function PageComponent(http, titleService, metaService, _formBuilder, route, currentRoute, _pageService, _contactservice, _metaTagService, toastr) {
-        var _this = this;
+var products_category_services_1 = __webpack_require__("./resources/assets/angular/app/services/products_category.services.ts");
+var ProductComponent = /** @class */ (function () {
+    function ProductComponent(http, route, _productscategoryService) {
         this.http = http;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this._formBuilder = _formBuilder;
         this.route = route;
-        this.currentRoute = currentRoute;
-        this._pageService = _pageService;
-        this._contactservice = _contactservice;
-        this._metaTagService = _metaTagService;
-        this.toastr = toastr;
-        this.submitted = false;
-        this.formContact = false;
-        this.checkMessage = false;
-        this.defaultURL = window.location.href;
-        this.getMetaTag();
-        this.currentRoute.routeReuseStrategy.shouldReuseRoute = function () {
-            return false;
-        };
-        this.currentRoute.events.subscribe(function (evt) {
-            if (evt instanceof router_1.NavigationEnd) {
-                _this.currentRoute.navigated = false;
-                window.scrollTo(0, 0);
-            }
-        });
-        this.loadAPI = new Promise(function (resolve) {
-            _this._pageService.loadScript();
-            resolve(true);
-        });
+        this._productscategoryService = _productscategoryService;
+        this.getProduct();
     }
-    PageComponent.prototype.loadData = function (data) {
-        this.dataContainer.nativeElement.innerHTML = data;
-    };
-    PageComponent.prototype.getMetaTag = function () {
-        var _this = this;
-        var slug = this.route.snapshot.params.name;
-        this.subscribePage = this._pageService.getMeta(slug).subscribe(function (res) {
-            _this.meta = res;
-            _this.title = _this.meta.title;
-            _this.image = _this.meta.image;
-            _this.description = _this.meta.description;
-            _this.keywords = _this.meta.keywords;
-            _this._metaTagService.getDataMetaTags(_this.title, _this.description, _this.image, _this.keywords, _this.defaultURL);
-        });
-    };
-    PageComponent.prototype.getDetailPage = function () {
-        var _this = this;
-        var slug = this.route.snapshot.params.name;
-        this.subscribePage = this._pageService.getPage(slug).subscribe(function (res) {
-            _this.page = res;
-            _this.checkMessage = true;
-            _this.loadData(_this.page.content);
-        });
-        if (slug == 'contact') {
-            this.formContact = true;
-        }
-    };
-    PageComponent.prototype.ngOnInit = function () {
-        var title = this.route.snapshot.params.name;
-        this.getDetailPage();
-        this.createForm();
-    };
-    PageComponent.prototype.ngOnDestroy = function () {
-        this.subscribePage.unsubscribe();
-    };
-    PageComponent.prototype.createForm = function () {
-        this.frmUser = this._formBuilder.group({
-            firstname: ['', [forms_1.Validators.required]],
-            lastname: ['', [forms_1.Validators.required]],
-            email: ['', [forms_1.Validators.required, forms_1.Validators.pattern('[a-zA-Z0-9._-]+[@]+[a-zA-Z0-9-]+[.]+[a-zA-Z]{2,6}')]],
-            phone: ['', [forms_1.Validators.required]],
-            message: ['', [forms_1.Validators.required]]
-        });
-    };
-    PageComponent.prototype.onSubmitForm = function () {
-        this.dataContact = this.frmUser.value;
-        this._contactservice.addContact(this.dataContact)
-            .subscribe(function (contact) { return JSON.stringify(contact); });
-        this.toastr.success('Send Message success!');
-        this.frmUser.reset();
-    };
-    PageComponent.prototype.onResetForm = function () {
-        this.frmUser.reset();
-    };
-    __decorate([
-        core_1.ViewChild('dataContainer'),
-        __metadata("design:type", core_1.ElementRef)
-    ], PageComponent.prototype, "dataContainer", void 0);
-    PageComponent = __decorate([
-        core_1.Component({
-            selector: 'app-page',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/page/page.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/page/page.component.scss")]
-        }),
-        __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
-            forms_1.FormBuilder,
-            router_1.ActivatedRoute,
-            router_1.Router,
-            page_service_1.PageService,
-            contact_service_1.ContactService,
-            metaTag_service_1.MetaTagService,
-            ngx_toastr_1.ToastrService])
-    ], PageComponent);
-    return PageComponent;
-}());
-exports.PageComponent = PageComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-reloadpage [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div #elementDescription [hidden]=\"true\"></div>\r\n <!-- TOUR_HERO -->\r\n     <div class=\"tour_hero\" [style.background-image]=\"'url(uploads/' + detailTour?.image + ')'\" [style.background-color] = \"'#bb0000'\" >\r\n        <!-- Tour-header -->\r\n        <div class=\"container-fluid tour-header\">\r\n            {{ detailTour?.item.title}}\r\n        </div>\r\n        <!-- End tour-header -->\r\n        <!-- Tour-information -->\r\n        <div class=\"container tour-information\">\r\n            <div class=\"row columns justify-content-center\">\r\n                <div class=\"col-md-3 col-sm-6 col-xs-6 col-6 text-center\">\r\n                    <div class=\"icon\">\r\n                        <i class=\"fa fa-calendar-minus-o\" aria-hidden=\"true\"></i>\r\n                    </div>\r\n                    <div class=\"tour_stats__stat\">\r\n                        {{detailTour?.duration}} Days\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-3 col-sm-6 col-xs-6 col-6 text-center\">\r\n                    <div class=\"icon\">\r\n                        <i class=\"fa fa-building\" aria-hidden=\"true\"></i>\r\n                    </div>\r\n                    <div class=\"tour_stats__stat\">\r\n                        {{detailTour?.cities}} Cities\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-3 col-sm-6 col-xs-6 col-6 text-center\">\r\n                    <div class=\"icon\">\r\n                        <i class=\"fa fa-motorcycle\" aria-hidden=\"true\"></i>\r\n                    </div>\r\n                    <div class=\"tour_stats__stat\">\r\n                        {{detailTour?.distance}} Km\r\n                    </div>\r\n                </div>\r\n                <div class=\"col-md-3 col-sm-6 col-xs-6 col-6 text-center\">\r\n                    <div class=\"icon\">\r\n                        <i class=\"fa fa-tag\" aria-hidden=\"true\"></i>\r\n                    </div>\r\n                    <div class=\"tour_stats__stat\">\r\n                        ${{detailTour?.price_normal|number:'1.0-3'}}\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <!-- End tour-information -->\r\n    </div>\r\n    <!-- END TOUR_HERO -->\r\n\r\n    <!-- TOUR-DATES -->\r\n    <div class=\"container-fluid tour-dates\">\r\n        <div class=\"row\">\r\n            <div class=\"col-md-2 calendar__month text-center\"  *ngFor = \"let month of arrMonth\" [class.active]=\"getCheckDate(month) !== '--'\"> \r\n                <span class=\"month\">{{month}}</span>\r\n                <div class=\"date\">{{ getCheckDate(month) }}\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <!-- END TOUR-DATES -->\r\n\r\n    <!-- BOOKING-BAR -->\r\n    <div class=\"booking-bar text-center\">\r\n        <div class=\"container\">\r\n            <div class=\"row justify-content-center\">\r\n                <div class=\"col-md-5\">\r\n                    <h2>booking a tour</h2>\r\n                </div>\r\n            </div>\r\n            <div >\r\n                <p>We use a safe and secure payment gateway, recognised worldwide.</p>\r\n                <p>15% Deposit on booking confirmation. 85% of Balance due thirty (30) days prior to Tour date. Full Tour cost payable for bookings made within Thirty (30) days of Tour date.</p>\r\n            </div>\r\n            <div class=\"row justify-content-center\">\r\n                <a routerLink=\"/page/contact\" class=\"btn-contact\">Contact Us</a>\r\n                <a routerLink=\"/tours/{{detailTour?.id}}/booking/{{detailTour?.item.slug}}\" class=\"btn-book\">BOOK TOUR</a>\r\n            </div>\r\n           \r\n        </div>\r\n       \r\n    </div>\r\n    <!-- END BOOKING-BAR -->\r\n\r\n    <!-- TOUR-GALLERY -->\r\n    <div class=\"container-fluid tour-gallery\">\r\n        <div class=\"row\">\r\n            <div class=\"col-4 col-md-2 tour_image\" *ngFor = \"let image of detailTour?.images\">\r\n                <a href=\"{{ image }}\" data-toggle=\"lightbox\" data-gallery=\"example-gallery\">\r\n                    <img src=\"{{ image }}\" onerror = \"this.src = 'images/default/picture.jpg'\" class=\"img-fluid\">\r\n                </a>\r\n            </div> \r\n        </div>    \r\n    </div>\r\n    <!-- END TOUR GALLERY -->\r\n\r\n    <!-- TOUR-CONTENT -->\r\n    <div class=\"container tour-content\">\r\n        <h3 class=\"title\">Pre-tour day</h3>\r\n        <p #dataContainer></p>\r\n    </div>\r\n    <!-- END TOUR-CONTENT -->\r\n\r\n    <!-- Useful Links -->\r\n\r\n    <div class=\"container social\">\r\n        <app-social></app-social>\r\n    </div>\r\n    <!-- END Useful Links -->\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ".tour_hero {\n  -o-object-fit: cover;\n     object-fit: cover;\n  background-size: cover;\n  height: auto; }\n\n.tour-header {\n  background: rgba(187, 0, 0, 0.9);\n  text-transform: uppercase;\n  text-align: center;\n  padding: 3rem 1rem;\n  font-size: 1.6rem;\n  color: #fff; }\n\n.tour-information {\n  padding-top: 100px;\n  padding-bottom: 100px; }\n\n.tour-information .col-md-3 {\n  margin-bottom: 2rem; }\n\n.icon {\n  color: #fff;\n  background: rgba(54, 54, 54, 0.8);\n  font-size: 3rem;\n  padding: 20px; }\n\n.tour_stats__stat {\n  background: rgba(255, 255, 255, 0.9);\n  text-align: center;\n  display: block;\n  padding: 1rem;\n  font-weight: 600;\n  font-size: 1.8rem; }\n\n.tour-dates {\n  background: #363636; }\n\n.calendar__month {\n  padding: 1rem 0;\n  text-transform: uppercase;\n  background: #363636;\n  width: 25%;\n  font-size: 1.2rem;\n  text-align: center;\n  border-top: 1px solid #2e2e2e;\n  border-left: 1px solid #2e2e2e;\n  color: rgba(255, 255, 255, 0.15); }\n\n.calendar__month span {\n  display: block;\n  font-weight: 600;\n  padding: 10px; }\n\n.tour-dates .active {\n  color: #fff;\n  background: #2e2e2e; }\n\n.booking-bar {\n  background: #bb0000;\n  width: 100%;\n  padding: 4rem 1rem;\n  color: #fff; }\n\nh2 {\n  text-transform: capitalize;\n  border-bottom: 1px solid;\n  padding-bottom: 1rem;\n  font-size: 2.4rem; }\n\n.booking-bar p {\n  font-size: 1.6rem; }\n\n.booking-bar a {\n  text-transform: uppercase;\n  color: #fff;\n  line-height: 1;\n  padding: 1rem;\n  font-size: 1rem;\n  margin: 1rem 1%;\n  width: 45%; }\n\n.btn-contact {\n  border: 1px solid #fff;\n  border-radius: 5px; }\n\n.btn-contact:hover {\n  background-color: #fff;\n  color: #bb0000 !important; }\n\n.btn-book {\n  background-color: #fff;\n  color: #bb0000 !important;\n  border-radius: 5px; }\n\n.btn-book:hover {\n  background-color: #f2f2f2; }\n\na:hover {\n  text-decoration: none; }\n\n.tour_image {\n  padding: 0;\n  border: 1px solid #fff; }\n\n.tour-gallery a img {\n  -o-object-fit: cover;\n     object-fit: cover;\n  /*margin-bottom: 5px;*/\n  height: 15vw;\n  width: 100%; }\n\n.tour-gallery a:hover {\n  opacity: 0.7; }\n\n.tour-content {\n  margin-top: 30px; }\n\n.links a {\n  color: #bb0000; }\n\n.links a:hover {\n  color: #363636; }\n\n@media (max-width: 576px) {\n  .tour-gallery a img {\n    width: 100%; }\n  .booking-bar {\n    padding: 3rem 0; }\n  .booking-bar p {\n    font-size: 1rem; } }\n\nimg {\n  -o-object-fit: cover;\n     object-fit: cover; }\n\n.social {\n  padding: 2rem 0; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-//services
-var tour_service_1 = __webpack_require__("./resources/assets/angular/app/services/tours/tour.service.ts");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
-var TourDetailComponent = /** @class */ (function () {
-    function TourDetailComponent(http, titleService, metaService, route, _tourService, _pageService, _metaTagService) {
-        var _this = this;
-        this.http = http;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this.route = route;
-        this._tourService = _tourService;
-        this._pageService = _pageService;
-        this._metaTagService = _metaTagService;
-        this.arrMonth = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-        this.checkMessage = false;
-        this.loadAPI = new Promise(function (resolve) {
-            _this._pageService.loadScript();
-            resolve(true);
-        });
-        this.defaultURL = window.location.href;
-        this.getDetailTour();
-    }
-    TourDetailComponent.prototype.loadData = function (data) {
-        this.dataContainer.nativeElement.innerHTML = data;
-    };
-    TourDetailComponent.prototype.loadDataDescription = function (data) {
-        this.elementDescription.nativeElement.innerHTML = data;
-    };
-    TourDetailComponent.prototype.getDetailTour = function () {
+    ProductComponent.prototype.getProduct = function () {
         var _this = this;
         var id = +this.route.snapshot.paramMap.get('id');
-        this._tourService.getDetailTour(id).subscribe(function (res) {
-            _this.detailTour = res;
-            _this.checkMessage = true;
-            _this.keywords = "lbmt,Tour, travel";
-            _this.title = _this.detailTour['item'].title;
-            _this.description = _this.detailTour['item'].summary;
-            _this.loadData(_this.detailTour['item'].description);
-            _this.loadDataDescription(_this.description);
-            _this.element = _this.elementDescription.nativeElement.textContent;
-            _this.image = _this.detailTour.image;
-            _this.titleService.setTitle(_this.title);
-            _this._metaTagService.getDataMetaTags(_this.title, _this.element, _this.image, _this.keywords, _this.defaultURL);
+        this._productscategoryService.getProduct(id).subscribe(function (res) {
+            _this.product = res['data'];
+            console.log(_this.product);
         });
     };
-    TourDetailComponent.prototype.getCheckDate = function (month) {
-        if (this.detailTour == undefined)
-            return '--';
-        var date = this.detailTour['dates'].find(function (item) { return item['month'] === month; }) || '--';
-        return date['date'] == undefined ? '--' : date['date'];
+    ProductComponent.prototype.ngOnInit = function () {
     };
-    TourDetailComponent.prototype.ngOnInit = function () {
-    };
-    __decorate([
-        core_1.ViewChild('dataContainer'),
-        __metadata("design:type", core_1.ElementRef)
-    ], TourDetailComponent.prototype, "dataContainer", void 0);
-    __decorate([
-        core_1.ViewChild('elementDescription'),
-        __metadata("design:type", core_1.ElementRef)
-    ], TourDetailComponent.prototype, "elementDescription", void 0);
-    TourDetailComponent = __decorate([
+    ProductComponent = __decorate([
         core_1.Component({
-            selector: 'app-tour-detail',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/tour-detail/tour-detail.component.scss")]
+            selector: 'app-product',
+            template: __webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.html"),
+            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.scss")]
         }),
         __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
             router_1.ActivatedRoute,
-            tour_service_1.TourService,
-            page_service_1.PageService,
-            metaTag_service_1.MetaTagService])
-    ], TourDetailComponent);
-    return TourDetailComponent;
+            products_category_services_1.ProductsCategoryService])
+    ], ProductComponent);
+    return ProductComponent;
 }());
-exports.TourDetailComponent = TourDetailComponent;
+exports.ProductComponent = ProductComponent;
 
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/tours/tours.component.html":
+/***/ "./resources/assets/angular/app/components/pages/products-category/products-category.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-reloadpage [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div class=\"tour-list\" *ngFor = \"let tour of tours\">\r\n  <!-- TITLE -->\r\n  <div class=\"tour-list-header\" [style.background-image]=\"'url(uploads/' + tour.cat_image + ')'\" [style.background-color] = \"'rgba(187, 0, 0, 0.9)'\">\r\n    <div class=\"overlay\">\r\n          {{ tour.cat_name }}\r\n    </div>\r\n  </div>\r\n  <!-- END TITLE -->\r\n  <!-- CONTENT -->\r\n  <div class=\"container-fluid content\">\r\n    <div class=\"row justify-content-md-center\">\r\n      <!-- col-md-4 -->\r\n      <div class=\"col-md-4 col-sm-6\" *ngFor = \"let item of tour.tours\">\r\n        <div class=\"one_tour\">\r\n          <img src=\"uploads/{{ item.tour_image }}\" onerror = \"this.src = 'images/default/picture.jpg'\" width=\"100%\" height=\"260px\" alt=\"\">\r\n          <div class=\"title\">\r\n            <a routerLink=\"/tours/{{item.id}}/{{item.slug}}\"> {{ item.title }} </a>\r\n          </div>\r\n          <div class=\"tour-information\">\r\n            <div class=\"list-tour-information\">\r\n              <div class=\"col-3 col-sm-3 text-center\"><b> {{ item.duration }} </b> Days</div>\r\n              <div class=\"col-3 col-sm-3 text-center\"><b> {{ item.cities }} </b> Cities</div>\r\n              <div class=\"col-3 col-sm-3 text-center\"><b> {{ item.distance }} </b> Km</div>\r\n              <div class=\"col-3 col-sm-3 text-center price\"><b> ${{ item.price_normal|number:'1.0-3' }} </b></div>\r\n            </div>\r\n            <div class=\"footer\">\r\n                <div class=\"action\">\r\n                  <div class=\"col-6 col-sm-6 detail\"><a routerLink=\"/tours/{{item.id}}/{{item.slug}}\"> DETAILS <i class=\"fa fa-indent\" aria-hidden=\"true\"></i></a></div>\r\n                  <div class=\"col-6 col-sm-6 booking\"><a routerLink=\"/tours/{{item.id}}/booking/{{item.slug}}\">BOOKING <i class=\"fa fa-pencil-square\" aria-hidden=\"true\"></i></a></div>\r\n                </div>\r\n              </div>\r\n          </div> \r\n        </div>\r\n      </div>\r\n      <!-- END col-md-4 -->\r\n    </div>\r\n  </div>\r\n  <!-- END CONTENT -->\r\n</div>\r\n"
+module.exports = "\n<div class=\"inner-header\">\n  <div class=\"container\">\n    <div class=\"pull-left\">\n      <h6 class=\"inner-title\">Sản phẩm</h6>\n    </div>\n    <div class=\"pull-right\">\n      <div class=\"beta-breadcrumb font-large\">\n        <a href=\"index.html\">Home</a> / <span>Sản phẩm</span>\n      </div>\n    </div>\n    <div class=\"clearfix\"></div>\n  </div>\n</div>\n<div class=\"container\">\n  <div id=\"content\" class=\"space-top-none\">\n    <div class=\"main-content\">\n      <div class=\"space60\">&nbsp;</div>\n      <div class=\"row\">\n        <div class=\"col-sm-3\">\n          <ul class=\"aside-menu\">\n            <li><a href=\"#\">Typography</a></li>\n            <li><a href=\"#\">Buttons</a></li>\n            <li><a href=\"#\">Dividers</a></li>\n            <li><a href=\"#\">Columns</a></li>\n            <li><a href=\"#\">Icon box</a></li>\n            <li><a href=\"#\">Notifications</a></li>\n            <li><a href=\"#\">Progress bars and Skill meter</a></li>\n            <li><a href=\"#\">Tabs</a></li>\n            <li><a href=\"#\">Testimonial</a></li>\n            <li><a href=\"#\">Video</a></li>\n            <li><a href=\"#\">Social icons</a></li>\n            <li><a href=\"#\">Carousel sliders</a></li>\n            <li><a href=\"#\">Custom List</a></li>\n            <li><a href=\"#\">Image frames &amp; gallery</a></li>\n            <li><a href=\"#\">Google Maps</a></li>\n            <li><a href=\"#\">Accordion and Toggles</a></li>\n            <li class=\"is-active\"><a href=\"#\">Custom callout box</a></li>\n            <li><a href=\"#\">Page section</a></li>\n            <li><a href=\"#\">Mini callout box</a></li>\n            <li><a href=\"#\">Content box</a></li>\n            <li><a href=\"#\">Computer sliders</a></li>\n            <li><a href=\"#\">Pricing &amp; Data tables</a></li>\n            <li><a href=\"#\">Process Builders</a></li>\n          </ul>\n        </div>\n        <div class=\"col-sm-9\">\n          <div class=\"beta-products-list\">\n            <h4>{{ products_category?.Category_name}}</h4>\n            <div class=\"beta-products-details\">\n              <p class=\"pull-left\">438 styles found</p>\n              <div class=\"clearfix\"></div>\n            </div>\n\n            <div class=\"row\">\n              <div class=\"col-sm-4\" *ngFor=\"let product of products_category?.Products\">\n                <div class=\"single-item\">\n                  <div class=\"single-item-header\">\n                    <a routerLink = \"/product/{{product.id}}\"><img src=\"assets/dest/images/products/{{product.product_image}}\" alt=\"\"></a>\n                  </div>\n                  <div class=\"single-item-body\">\n                    <p class=\"single-item-title\">{{product.title}}</p>\n                    <p class=\"single-item-price\">\n                      <span>{{product.price}}</span>\n                    </p>\n                  </div>\n                  <div class=\"single-item-caption\">\n                    <a class=\"add-to-cart pull-left\" href=\"shopping_cart.html\"><i class=\"fa fa-shopping-cart\"></i></a>\n                    <a class=\"beta-btn primary\" routerLink = \"/product/{{product.id}}\" >Details <i class=\"fa fa-chevron-right\"></i></a>\n                    <div class=\"clearfix\"></div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div> <!-- .beta-products-list -->\n\n          <div class=\"space50\">&nbsp;</div>\n\n\n        </div>\n      </div> <!-- end section with sidebar and main content -->\n\n\n    </div> <!-- .main-content -->\n  </div> <!-- #content -->\n</div> <!-- .container -->\n"
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/tours/tours.component.scss":
+/***/ "./resources/assets/angular/app/components/pages/products-category/products-category.component.scss":
 /***/ (function(module, exports) {
 
-module.exports = ".tour-list-header {\n  height: 400px;\n  background-position: center; }\n\n.is-special {\n  background-image: url(\"/uploads/special-tours.jpg\"); }\n\n.is-central {\n  background-image: url(\"/uploads/central-western-tours.jpg\"); }\n\n.is-northern {\n  background-image: url(\"/uploads/northern-tours.jpg\"); }\n\n.overlay {\n  background: rgba(0, 0, 0, 0.5);\n  position: absolute;\n  width: 100%;\n  height: 400px;\n  z-index: 2;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  padding: 1rem;\n  color: #fff;\n  font-size: 1.6rem;\n  text-transform: uppercase; }\n\n.title {\n  text-align: center;\n  height: auto;\n  padding: 1rem;\n  font-size: 1rem;\n  border-bottom: 1px solid #bb0000;\n  text-transform: uppercase;\n  font-weight: bold;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n.one_tour {\n  border: 1px solid #dbdbdb;\n  height: auto; }\n\na {\n  color: #363636; }\n\n.content {\n  margin-bottom: 20px;\n  margin-top: 20px; }\n\n.tour-list {\n  height: auto; }\n\n.col-md-4 {\n  margin-bottom: 15px; }\n\n.card-body {\n  margin-top: 10px; }\n\n.card-body a {\n  color: #363636;\n  font-size: 20px;\n  text-transform: uppercase;\n  border-bottom: 1px solid #bb0000;\n  padding-bottom: 1.5rem; }\n\na:hover {\n  text-decoration: none; }\n\n.detail, .booking {\n  padding: 1rem; }\n\n.detail {\n  border-right: 1px solid #dbdbdb; }\n\n.footer .booking a {\n  color: #bb0000; }\n\n.footer {\n  text-align: center;\n  border-top: 1px solid #dbdbdb; }\n\n.footer a {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: #363636;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\n.footer .action {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\nimg {\n  -o-object-fit: cover;\n     object-fit: cover; }\n\n@media (min-width: 750px) and (max-width: 910px) {\n  .tour-information {\n    font-size: 11px; } }\n\n.list-tour-information {\n  padding: 1rem 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.price {\n  word-break: break-all; }\n\n@media (min-width: 575px) {\n  .overlay {\n    font-size: 3rem; } }\n"
+module.exports = ""
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/tours/tours.component.ts":
+/***/ "./resources/assets/angular/app/components/pages/products-category/products-category.component.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1398,210 +340,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-//services
-var tour_service_1 = __webpack_require__("./resources/assets/angular/app/services/tours/tour.service.ts");
-var page_service_1 = __webpack_require__("./resources/assets/angular/app/services/page/page.service.ts");
-var metaTag_service_1 = __webpack_require__("./resources/assets/angular/app/services/metaTag/metaTag.service.ts");
 var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var ToursComponent = /** @class */ (function () {
-    function ToursComponent(_tourservice, route, http, titleService, metaService, _pageService, _metaTagService) {
-        this._tourservice = _tourservice;
-        this.route = route;
+var products_category_services_1 = __webpack_require__("./resources/assets/angular/app/services/products_category.services.ts");
+var ProductsCategoryComponent = /** @class */ (function () {
+    function ProductsCategoryComponent(http, route, _productscategoryService) {
         this.http = http;
-        this.titleService = titleService;
-        this.metaService = metaService;
-        this._pageService = _pageService;
-        this._metaTagService = _metaTagService;
-        this.checkMessage = false;
-        this.defaultURL = window.location.href;
-        this.getMetaTag();
+        this.route = route;
+        this._productscategoryService = _productscategoryService;
+        this.getProductsCategory();
     }
-    ToursComponent.prototype.getToursFromServices = function () {
+    ProductsCategoryComponent.prototype.getProductsCategory = function () {
         var _this = this;
-        this._tourservice.getTours()
-            .subscribe(function (tours) {
-            _this.tours = tours;
-            _this.checkMessage = true;
+        var id = +this.route.snapshot.paramMap.get('id');
+        this._productscategoryService.getProductsCategory(id).subscribe(function (res) {
+            _this.products_category = res['data'];
+            console.log(_this.products_category['Category_name']);
         });
     };
-    ToursComponent.prototype.getMetaTag = function () {
-        var _this = this;
-        var slug = 'tours';
-        this._pageService.getMeta(slug).subscribe(function (res) {
-            _this.meta = res;
-            _this.title = _this.meta.title;
-            _this.image = _this.meta.image;
-            _this.description = _this.meta.description;
-            _this.keywords = _this.meta.keywords;
-            _this._metaTagService.getDataMetaTags(_this.title, _this.description, _this.image, _this.keywords, _this.defaultURL);
-        });
+    ProductsCategoryComponent.prototype.ngOnInit = function () {
     };
-    ToursComponent.prototype.ngOnInit = function () {
-        this.getToursFromServices();
-    };
-    ToursComponent = __decorate([
+    ProductsCategoryComponent = __decorate([
         core_1.Component({
-            selector: 'app-tours',
-            template: __webpack_require__("./resources/assets/angular/app/components/pages/tours/tours.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/tours/tours.component.scss")]
+            selector: 'app-products-category',
+            template: __webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.html"),
+            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.scss")]
         }),
-        __metadata("design:paramtypes", [tour_service_1.TourService,
+        __metadata("design:paramtypes", [http_1.HttpClient,
             router_1.ActivatedRoute,
-            http_1.HttpClient,
-            platform_browser_1.Title,
-            platform_browser_1.Meta,
-            page_service_1.PageService,
-            metaTag_service_1.MetaTagService])
-    ], ToursComponent);
-    return ToursComponent;
+            products_category_services_1.ProductsCategoryService])
+    ], ProductsCategoryComponent);
+    return ProductsCategoryComponent;
 }());
-exports.ToursComponent = ToursComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<app-reloadpage id=\"checkoutDisplay\" [hidden] = \"checkMessage\"></app-reloadpage>\r\n<div class=\"d-flex justify-content-center align-items-center container \">\r\n  <div class=\"row \">\r\n      <form [formGroup]=\"creditCardFormGroup\" (submit)=\"getToken()\" id=\"payment-form\" class=\"frm\">    \r\n        <mat-form-field>\r\n          <input  id=\"cc-number\" formControlName=\"cardNumber\" type=\"tel\" maxlength=\"19\" autocomplete=\"cc-number\" ccNumber  matInput placeholder=\"Card Number\">\r\n        </mat-form-field>\r\n        <mat-form-field style=\"width: 50%; float: left;\">\r\n            <mat-select formControlName=\"expiryMonth\" placeholder=\"Expiry Month\" required>\r\n                <mat-option *ngFor = \"let month of months\" value=\"{{ month }}\" > {{ month }}</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <mat-form-field style=\"width: 50%; float: right;\">\r\n            <mat-select formControlName=\"expiryYear\" placeholder=\"Expiry Year\" required>\r\n                <mat-option *ngFor = \"let year of years\" value=\"{{ year }}\" > {{ year }}</mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n        <mat-form-field style=\"width: 50%; float: left;\">\r\n            <input formControlName=\"cvc\" name=\"cvc\" maxlength=\"4\"  matInput placeholder = \"CVC\" required>\r\n        </mat-form-field>\r\n        <mat-form-field style=\"width: 50%; float: right;\">\r\n            <input  name=\"postal\"  matInput placeholder = \"POSTAL\">\r\n        </mat-form-field>     \r\n        <div class=\"d-flex justify-content-center align-items-center container \">\r\n            <div class=\"row \">\r\n                <div id=\"message\">\r\n                    {{ message }}\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"d-flex justify-content-center align-items-center container \">\r\n            <div class=\"row \">\r\n                <button [hidden]=\"checkPayment\" id=\"btn\" mat-raised-button color=\"primary\">{{ totalPrice.totalPrice|currency }}</button>               \r\n            </div>           \r\n        </div>          \r\n    </form> \r\n  </div>\r\n</div>\r\n\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "mat-form-field {\n  width: 100%; }\n\n.frm {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\nform {\n  margin-top: 20px; }\n\n.message {\n  margin-top: 10px;\n  margin-bottom: 20px; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var booking_service_1 = __webpack_require__("./resources/assets/angular/app/services/booking/booking.service.ts");
-// services
-var checkout_service_1 = __webpack_require__("./resources/assets/angular/app/services/checkout/checkout.service.ts");
-var creditcard_service_1 = __webpack_require__("./resources/assets/angular/app/services/creditCard/creditcard.service.ts");
-var BehaviorSubject_1 = __webpack_require__("./node_modules/rxjs/_esm5/BehaviorSubject.js");
-var rider_service_1 = __webpack_require__("./resources/assets/angular/app/services/riders/rider.service.ts");
-var CreditcardComponent = /** @class */ (function () {
-    function CreditcardComponent(_formBuilder, _bookingService, _checkoutService, _riderService, storage, _creditCardService) {
-        var _this = this;
-        this._formBuilder = _formBuilder;
-        this._bookingService = _bookingService;
-        this._checkoutService = _checkoutService;
-        this._riderService = _riderService;
-        this.storage = storage;
-        this._creditCardService = _creditCardService;
-        this.months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-        this.years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
-        this.next = new core_1.EventEmitter();
-        this.subject = new BehaviorSubject_1.BehaviorSubject(false);
-        this.checkMessage = true;
-        this.checkPayment = false;
-        this.subject.subscribe(function (next) {
-            if (next) {
-                _this._riderService.isValid = false;
-                _this._creditCardService.isNext = false;
-                setTimeout(function () {
-                    _this.next.emit();
-                    _this._creditCardService.isSubmit = true;
-                    window.document.getElementById('btn').click();
-                }, 0);
-            }
-        });
-    }
-    CreditcardComponent.prototype.getToken = function () {
-        var _this = this;
-        this.checkMessage = false;
-        document.getElementById("checkoutDisplay").style.display = "block";
-        if (this._creditCardService.isSubmit)
-            return this.message = '';
-        this._creditCardService.isNext = true;
-        window['Stripe'].card.createToken({
-            number: this.creditCardFormGroup.value.cardNumber,
-            exp_month: this.creditCardFormGroup.value.expiryMonth,
-            exp_year: this.creditCardFormGroup.value.expiryYear,
-            cvc: this.creditCardFormGroup.value.cvc
-        }, function (status, response) {
-            if (status === 200) {
-                _this.storage.set('card_id', response.id);
-                var book = _this.storage.get('dataBooking');
-                var riders = _this.storage.get('riders');
-                var card_id = response.id;
-                _this.data = {
-                    book: book,
-                    riders: riders,
-                    card_id: card_id
-                };
-                _this._creditCardService.addPayment(_this.data)
-                    .subscribe(function (book) {
-                    _this.checkPayment = true;
-                    JSON.stringify(book);
-                    _this.subject.next(true);
-                }, function (err) {
-                    _this._creditCardService.isNext = false;
-                });
-            }
-            else {
-                window.document.getElementById('message').innerText = response.error.message;
-                _this.message = response.error.message;
-                _this._creditCardService.isNext = false;
-                document.getElementById("checkoutDisplay").style.display = "none";
-            }
-        }, function (err) {
-            console.log(err);
-        });
-    };
-    CreditcardComponent.prototype.ngOnInit = function () {
-        this._creditCardService.creditCardForm(this);
-        this._bookingService.loadScript('https://checkout.stripe.com/checkout.js');
-        this._bookingService.loadScript('https://js.stripe.com/v2/');
-        this.totalPrice = this.storage.get("dataBooking");
-    };
-    CreditcardComponent.prototype.ngOnDestroy = function () {
-        this.subject.unsubscribe();
-    };
-    __decorate([
-        core_1.Output(),
-        __metadata("design:type", Object)
-    ], CreditcardComponent.prototype, "next", void 0);
-    CreditcardComponent = __decorate([
-        core_1.Component({
-            moduleId: module.i,
-            selector: 'app-creditcard',
-            template: __webpack_require__("./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/partials/creditcard/creditcard/creditcard.component.scss")],
-        }),
-        __param(4, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            booking_service_1.BookingService,
-            checkout_service_1.CheckoutService,
-            rider_service_1.RiderService,
-            angular_webstorage_service_1.WebStorageService,
-            creditcard_service_1.CreditCardService])
-    ], CreditcardComponent);
-    return CreditcardComponent;
-}());
-exports.CreditcardComponent = CreditcardComponent;
+exports.ProductsCategoryComponent = ProductsCategoryComponent;
 
 
 /***/ }),
@@ -1659,7 +429,7 @@ exports.FooterComponent = FooterComponent;
 /***/ "./resources/assets/angular/app/components/partials/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"header\">\r\n      <div class=\"header-top\">\r\n        <div class=\"container\">\r\n          <div class=\"pull-left auto-width-left\">\r\n            <ul class=\"top-menu menu-beta l-inline\">\r\n              <li><a href=\"\"><i class=\"fa fa-home\"></i> 101 Mai Xuân Thưởng, Vĩnh Hòa, Nha Trang</a></li>\r\n              <li><a href=\"\"><i class=\"fa fa-phone\"></i> 0163 296 7751</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"pull-right auto-width-right\">\r\n            <ul class=\"top-details menu-beta l-inline\">\r\n              <li><a href=\"#\"><i class=\"fa fa-user\"></i>Tài khoản</a></li>\r\n              <li><a href=\"#\">Đăng kí</a></li>\r\n              <li><a href=\"#\">Đăng nhập</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-top -->\r\n      <div class=\"header-body\">\r\n        <div class=\"container beta-relative\">\r\n          <div class=\"pull-left\">\r\n            <a href=\"index.html\" id=\"logo\"><img src=\"assets/dest/images/logo-cake.png\" width=\"200px\" alt=\"\"></a>\r\n          </div>\r\n          <div class=\"pull-right beta-components space-left ov\">\r\n            <div class=\"space10\">&nbsp;</div>\r\n            <div class=\"beta-comp\">\r\n              <form role=\"search\" method=\"get\" id=\"searchform\" action=\"/\">\r\n                <input type=\"text\" value=\"\" name=\"s\" id=\"s\" placeholder=\"Nhập từ khóa...\" />\r\n                <button class=\"fa fa-search\" type=\"submit\" id=\"searchsubmit\"></button>\r\n              </form>\r\n            </div>\r\n\r\n            <div class=\"beta-comp\">\r\n              <div class=\"cart\">\r\n                <div class=\"beta-select\"><i class=\"fa fa-shopping-cart\"></i> Giỏ hàng (Trống) <i class=\"fa fa-chevron-down\"></i></div>\r\n                <div class=\"beta-dropdown cart-body\">\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/1.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/2.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/3.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-caption\">\r\n                    <div class=\"cart-total text-right\">Tổng tiền: <span class=\"cart-total-value\">$34.55</span></div>\r\n                    <div class=\"clearfix\"></div>\r\n\r\n                    <div class=\"center\">\r\n                      <div class=\"space10\">&nbsp;</div>\r\n                      <a href=\"checkout.html\" class=\"beta-btn primary text-center\">Đặt hàng <i class=\"fa fa-chevron-right\"></i></a>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div> <!-- .cart -->\r\n            </div>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-body -->\r\n      <div class=\"header-bottom\" style=\"background-color: #0277b8;\">\r\n        <div class=\"container\">\r\n          <a class=\"visible-xs beta-menu-toggle pull-right\" href=\"#\"><span class='beta-menu-toggle-text'>Menu</span> <i class=\"fa fa-bars\"></i></a>\r\n          <div class=\"visible-xs clearfix\"></div>\r\n          <nav class=\"main-menu\">\r\n            <ul class=\"l-inline ov\">\r\n              <li><a href=\"/tours\">Trang chủ</a></li>\r\n              <li><a href=\"#\">Sản phẩm</a>\r\n                <ul class=\"sub-menu\">\r\n                  <li><a href=\"product_type.html\">Sản phẩm 1</a></li>\r\n                  <li><a href=\"product_type.html\">Sản phẩm 2</a></li>\r\n                  <li><a href=\"product_type.html\">Sản phẩm 4</a></li>\r\n                </ul>\r\n              </li>\r\n              <li><a href=\"about.html\">Giới thiệu</a></li>\r\n              <li><a href=\"contacts.html\">Liên hệ</a></li>\r\n            </ul>\r\n            <div class=\"clearfix\"></div>\r\n          </nav>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-bottom -->\r\n    </div> <!-- #header -->\r\n\r\n\r\n    <!--<mat-toolbar-row>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/']\" [routerLinkActiveOptions] = \"{ exact : true}\">Trang Chủ <span class=\"sr-only\">(current)</span></a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/tours']\">Sản Phẩm</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/about']\">Giới Thiệu</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/contact']\">Liên Hệ</a>-->\r\n    <!--</mat-toolbar-row>-->\r\n\r\n    <!--<mat-sidenav-content>-->\r\n      <!--<router-outlet></router-outlet>-->\r\n      <!--<app-footer></app-footer>-->\r\n    <!--</mat-sidenav-content>-->\r\n\r\n"
+module.exports = "<div id=\"header\">\r\n      <div class=\"header-top\">\r\n        <div class=\"container\">\r\n          <div class=\"pull-left auto-width-left\">\r\n            <ul class=\"top-menu menu-beta l-inline\">\r\n              <li><a href=\"\"><i class=\"fa fa-home\"></i> 101 Mai Xuân Thưởng, Vĩnh Hòa, Nha Trang</a></li>\r\n              <li><a href=\"\"><i class=\"fa fa-phone\"></i> 0163 296 7751</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"pull-right auto-width-right\">\r\n            <ul class=\"top-details menu-beta l-inline\">\r\n              <li><a href=\"#\"><i class=\"fa fa-user\"></i>Tài khoản</a></li>\r\n              <li><a href=\"#\">Đăng kí</a></li>\r\n              <li><a href=\"#\">Đăng nhập</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-top -->\r\n      <div class=\"header-body\">\r\n        <div class=\"container beta-relative\">\r\n          <div class=\"pull-left\">\r\n            <a href=\"index.html\" id=\"logo\"><img src=\"assets/dest/images/logo-cake.png\" width=\"200px\" alt=\"\"></a>\r\n          </div>\r\n          <div class=\"pull-right beta-components space-left ov\">\r\n            <div class=\"space10\">&nbsp;</div>\r\n            <div class=\"beta-comp\">\r\n              <form role=\"search\" method=\"get\" id=\"searchform\" action=\"/\">\r\n                <input type=\"text\" value=\"\" name=\"s\" id=\"s\" placeholder=\"Nhập từ khóa...\" />\r\n                <button class=\"fa fa-search\" type=\"submit\" id=\"searchsubmit\"></button>\r\n              </form>\r\n            </div>\r\n\r\n            <div class=\"beta-comp\">\r\n              <div class=\"cart\">\r\n                <div class=\"beta-select\"><i class=\"fa fa-shopping-cart\"></i> Giỏ hàng (Trống) <i class=\"fa fa-chevron-down\"></i></div>\r\n                <div class=\"beta-dropdown cart-body\">\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/1.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/2.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/3.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-caption\">\r\n                    <div class=\"cart-total text-right\">Tổng tiền: <span class=\"cart-total-value\">$34.55</span></div>\r\n                    <div class=\"clearfix\"></div>\r\n\r\n                    <div class=\"center\">\r\n                      <div class=\"space10\">&nbsp;</div>\r\n                      <a href=\"checkout.html\" class=\"beta-btn primary text-center\">Đặt hàng <i class=\"fa fa-chevron-right\"></i></a>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div> <!-- .cart -->\r\n            </div>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-body -->\r\n      <div class=\"header-bottom\" style=\"background-color: #0277b8;\">\r\n        <div class=\"container\">\r\n          <a class=\"visible-xs beta-menu-toggle pull-right\" href=\"#\"><span class='beta-menu-toggle-text'>Menu</span> <i class=\"fa fa-bars\"></i></a>\r\n          <div class=\"visible-xs clearfix\"></div>\r\n          <nav class=\"main-menu\">\r\n            <ul class=\"l-inline ov\">\r\n              <li><a href=\"/tours\">Trang chủ</a></li>\r\n              <li><a href=\"#\">Sản phẩm</a>\r\n                <ul class=\"sub-menu\">\r\n                  <li><a routerLink = \"/product-category/3\">Sản phẩm 1</a></li>\r\n                </ul>\r\n              </li>\r\n              <li><a href=\"about.html\">Giới thiệu</a></li>\r\n              <li><a href=\"contacts.html\">Liên hệ</a></li>\r\n            </ul>\r\n            <div class=\"clearfix\"></div>\r\n          </nav>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-bottom -->\r\n    </div> <!-- #header -->\r\n\r\n\r\n    <!--<mat-toolbar-row>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/']\" [routerLinkActiveOptions] = \"{ exact : true}\">Trang Chủ <span class=\"sr-only\">(current)</span></a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/tours']\">Sản Phẩm</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/about']\">Giới Thiệu</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/contact']\">Liên Hệ</a>-->\r\n    <!--</mat-toolbar-row>-->\r\n\r\n    <!--<mat-sidenav-content>-->\r\n      <!--<router-outlet></router-outlet>-->\r\n      <!--<app-footer></app-footer>-->\r\n    <!--</mat-sidenav-content>-->\r\n\r\n"
 
 /***/ }),
 
@@ -1686,16 +456,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var layout_1 = __webpack_require__("./node_modules/@angular/cdk/esm5/layout.es5.js");
 // services
-var setting_service_1 = __webpack_require__("./resources/assets/angular/app/services/setting/setting.service.ts");
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent(changeDetectorRef, media, _settingService) {
-        this._settingService = _settingService;
-        this.fillerNav = Array(50).fill(0).map(function (_, i) { return "Nav Item " + (i + 1); });
-        this.fillerContent = Array(50).fill(0).map(function () {
-            return "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut\n       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco\n       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in\n       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\n       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-        });
+    function HeaderComponent() {
     }
     HeaderComponent.prototype.ngOnInit = function () {
     };
@@ -1705,9 +468,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.html"),
             styles: [__webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.scss")]
         }),
-        __metadata("design:paramtypes", [core_1.ChangeDetectorRef,
-            layout_1.MediaMatcher,
-            setting_service_1.SettingService])
+        __metadata("design:paramtypes", [])
     ], HeaderComponent);
     return HeaderComponent;
 }());
@@ -1716,462 +477,7 @@ exports.HeaderComponent = HeaderComponent;
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<!--<div class=\"spinner\">-->\r\n  <!--<mat-spinner class=\"reload\"></mat-spinner>-->\r\n<!--</div>-->\r\n<div class=\"spinner\">\r\n    <div class=\"loader\"></div>\r\n</div>"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ".spinner {\n  background: rgba(0, 0, 0, 0.57);\n  position: fixed;\n  z-index: 9999;\n  top: 0;\n  right: 0;\n  left: 0;\n  bottom: 0; }\n\n.loader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  border: 3px solid #f3f3f3;\n  border-radius: 50%;\n  border-top: 3px solid #920000;\n  border-bottom: 3px solid #920000;\n  width: 50px;\n  height: 50px;\n  -webkit-animation: spin 1s linear infinite;\n  animation: spin 1s linear infinite; }\n\n@-webkit-keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg); } }\n\n@keyframes spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg); }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg); } }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var ReloadpageComponent = /** @class */ (function () {
-    function ReloadpageComponent() {
-        this.checkMessage = false;
-    }
-    ReloadpageComponent.prototype.ngOnInit = function () {
-    };
-    ReloadpageComponent = __decorate([
-        core_1.Component({
-            selector: 'app-reloadpage',
-            template: __webpack_require__("./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/partials/reloadpage/reloadpage.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], ReloadpageComponent);
-    return ReloadpageComponent;
-}());
-exports.ReloadpageComponent = ReloadpageComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/riders/riders/riders.component.html":
-/***/ (function(module, exports) {
-
-module.exports = " <mat-horizontal-stepper [linear]=\"true\" id = \"rider\" #stepper1>\r\n      <mat-step *ngFor= \"let rider of numberRiders; let i = index;\" [stepControl]=\"_riderService.isNext[rider]\" [completed]=\"_riderService.isNext[rider]\" label=\"Rider {{i+1}}\" #name>\r\n        <div class=\"d-flex justify-content-center align-items-center container \">\r\n          <div class=\"row \">\r\n            <form [formGroup]=\"_riderService.ridersFormGroup[rider]\" class=\"frm\">\r\n              <mat-form-field>\r\n                <input matInput placeholder=\"First Name\" formControlName=\"firstname\" required>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                <input matInput placeholder=\"Last Name\" formControlName=\"lastname\" required>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                <mat-select formControlName=\"gender_id\" placeholder=\"Gender\" required>\r\n                  <mat-option *ngFor = \"let title of titles\" value=\"{{title.id}}\" > {{ title.name }}</mat-option>\r\n                </mat-select>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                <input matInput type=\"date\" placeholder=\"Date of Birth\" formControlName=\"date_of_birth\" required>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                <mat-select formControlName=\"country_id\" placeholder=\"Country\" required>\r\n                  <mat-option *ngFor = \"let country of countries\" value=\"{{country.id}}\" > {{ country.name }}</mat-option>\r\n                </mat-select>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                <input matInput type=\"number\" placeholder = \"Contact Number\" formControlName=\"contact_number\" required>\r\n              </mat-form-field>\r\n              <mat-form-field>\r\n                  <mat-select formControlName=\"lbmt_tshirt_id\" placeholder=\"T-Shirt Size\" required>\r\n                    <mat-option *ngFor = \"let lbmtTshirt of lbmtTshirts\" value=\"{{lbmtTshirt.id}}\" > {{ lbmtTshirt.name }}</mat-option>\r\n                  </mat-select>\r\n              </mat-form-field>\r\n              <div class=\"d-flex justify-content-center align-items-center container \">\r\n                <div class=\"row \">\r\n                    <button mat-raised-button color=\"primary\" *ngIf = \"i > 0\" matStepperPrevious>BACK</button>\r\n                    <button mat-raised-button color=\"primary\" (click)=\"onSubmitRider(rider, stepper1)\">REGISTER RIDERS {{ i+1 }}</button>\r\n                </div>\r\n              </div>\r\n            </form>\r\n          </div>\r\n        </div>\r\n      </mat-step>\r\n    </mat-horizontal-stepper>\r\n   "
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/riders/riders/riders.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "mat-form-field {\n  width: 100%; }\n\n.frm {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%; }\n\nform {\n  width: 100%;\n  margin-top: 20px;\n  margin-bottom: 20px; }\n\nbutton {\n  margin-right: 10px; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/riders/riders/riders.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var core_2 = __webpack_require__("./node_modules/@angular/material/esm5/core.es5.js");
-var ngx_toastr_1 = __webpack_require__("./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
-var rider_service_1 = __webpack_require__("./resources/assets/angular/app/services/riders/rider.service.ts");
-var checkout_service_1 = __webpack_require__("./resources/assets/angular/app/services/checkout/checkout.service.ts");
-var RidersComponent = /** @class */ (function () {
-    function RidersComponent(_formBuilder, route, http, storage, _riderService, _checkoutService, dateAdapter, toastr) {
-        this._formBuilder = _formBuilder;
-        this.route = route;
-        this.http = http;
-        this.storage = storage;
-        this._riderService = _riderService;
-        this._checkoutService = _checkoutService;
-        this.dateAdapter = dateAdapter;
-        this.toastr = toastr;
-        this.next = new core_1.EventEmitter();
-        this.dataRiders = [];
-        this.numberRiders = [];
-        this.dateAdapter.setLocale('ja-JP');
-    }
-    RidersComponent.prototype.getRiderArray = function () {
-        var riders = this.storage.get("dataBooking");
-        for (var i = 0; i <= riders.rider - 1; i++) {
-            this.numberRiders.push(i);
-        }
-    };
-    RidersComponent.prototype.onSubmitRider = function (i, stepper) {
-        var _this = this;
-        if (!this._riderService.ridersFormGroup[i].valid)
-            return 'a';
-        this.formList = this._riderService.ridersFormGroup[i].value;
-        this.dataRiders[i] = this.formList;
-        var riders = this.dataRiders;
-        this.storage.set('riders', riders);
-        var numberRiser = this.storage.get("dataBooking").rider;
-        setTimeout(function () {
-            _this.toastr.success('Add Rider Success!');
-        }, 2);
-        this._riderService.isNext[i] = true;
-        if (i == numberRiser - 1) {
-            this._riderService.isValid = true;
-            setTimeout(function () {
-                _this.next.emit();
-            }, 0);
-        }
-        else {
-            setTimeout(function () {
-                stepper.next();
-            }, 0);
-        }
-    };
-    RidersComponent.prototype.getTitleFromServices = function () {
-        var _this = this;
-        this._checkoutService.getTitle()
-            .subscribe(function (title) {
-            _this.titles = title;
-        });
-    };
-    RidersComponent.prototype.getlbmtTshirtFromServices = function () {
-        var _this = this;
-        this._checkoutService.getlbmtTshirt()
-            .subscribe(function (lbmtTshirts) {
-            _this.lbmtTshirts = lbmtTshirts;
-        });
-    };
-    RidersComponent.prototype.getCountryFromServices = function () {
-        var _this = this;
-        this._checkoutService.getCountry()
-            .subscribe(function (countries) {
-            _this.countries = countries;
-        });
-    };
-    RidersComponent.prototype.ngOnInit = function () {
-        this.getTitleFromServices();
-        this.getlbmtTshirtFromServices();
-        this.getCountryFromServices();
-        this.getRiderArray();
-        this._riderService.riderForm(this);
-    };
-    __decorate([
-        core_1.Output(),
-        __metadata("design:type", Object)
-    ], RidersComponent.prototype, "next", void 0);
-    RidersComponent = __decorate([
-        core_1.Component({
-            selector: 'app-riders',
-            template: __webpack_require__("./resources/assets/angular/app/components/partials/riders/riders/riders.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/partials/riders/riders/riders.component.scss")],
-        }),
-        __param(3, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            router_1.ActivatedRoute,
-            http_1.HttpClient,
-            angular_webstorage_service_1.WebStorageService,
-            rider_service_1.RiderService,
-            checkout_service_1.CheckoutService,
-            core_2.DateAdapter,
-            ngx_toastr_1.ToastrService])
-    ], RidersComponent);
-    return RidersComponent;
-}());
-exports.RidersComponent = RidersComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/social/social.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "\r\n<div>\r\n  <h2>Useful Links</h2>\r\n  <ul>\r\n    <li>\r\n      <a [routerLink] = \"['/page/tour-information']\">Tour Information</a>\r\n    </li>\r\n    <li>\r\n      <a [routerLink] = \"['/page/booking-charges']\">Booking & Charges</a>\r\n    </li>\r\n    <li>\r\n      <a [routerLink] = \"['/page/contact']\">Contact LBMT</a>\r\n    </li>\r\n  </ul>\r\n</div>\r\n<!-- AddToAny BEGIN -->\r\n<div class=\"a2a_kit a2a_kit_size_32 a2a_default_style\" >\r\n  <a class=\"a2a_button_facebook\"></a>\r\n  <a class=\"a2a_button_twitter\"></a>\r\n  <a class=\"a2a_button_facebook_messenger\"></a>\r\n  <a class=\"a2a_button_whatsapp\"></a>\r\n  <a class=\"a2a_button_skype\"></a>\r\n  <a class=\"a2a_button_pinterest\"></a>\r\n  <a class=\"a2a_button_reddit\"></a>\r\n  <a class=\"a2a_button_google_plus\"></a>\r\n  <a class=\"a2a_button_linkedin\"></a>\r\n  <a class=\"a2a_button_email\"></a>\r\n  <a class=\"a2a_button_evernote\"></a>\r\n  <a class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"></a>\r\n</div>\r\n<!-- AddToAny END -->\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/social/social.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = "a {\n  color: #bb0000;\n  cursor: pointer;\n  text-decoration: none; }\n\nh2 {\n  margin-top: 1.1428em;\n  margin-bottom: 0.5714em;\n  font-size: 1.75em;\n  font-weight: unset; }\n\n.a2a_kit {\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  line-height: 32px;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex; }\n\n.a2a_kit a {\n  margin-top: 0.5rem;\n  cursor: pointer; }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/social/social.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var SocialComponent = /** @class */ (function () {
-    function SocialComponent() {
-    }
-    SocialComponent.prototype.ngOnInit = function () {
-    };
-    SocialComponent = __decorate([
-        core_1.Component({
-            selector: 'app-social',
-            template: __webpack_require__("./resources/assets/angular/app/components/partials/social/social.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/partials/social/social.component.scss")]
-        }),
-        __metadata("design:paramtypes", [])
-    ], SocialComponent);
-    return SocialComponent;
-}());
-exports.SocialComponent = SocialComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/success/success.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"title\">\r\n    1. Information Tour Booking\r\n</div>\r\n\r\n<table class=\"mat-table text-center\">\r\n    <thead>\r\n      <tr class=\"mat-header-row\">\r\n        <th class=\"mat-header-cell check\"> Image </th>\r\n        <th class=\"mat-header-cell\"> Name Tour </th>\r\n        <th class=\"mat-header-cell\"> Dates </th>\r\n        <th class=\"mat-header-cell\"> Quantity </th>\r\n        <th class=\"mat-header-cell check\"> Price (1 Adult) </th>\r\n        <th class=\"mat-header-cell check\"> Payment Type </th>\r\n        <th class=\"mat-header-cell check\"> Code Promotion (%) </th>\r\n        <th class=\"mat-header-cell\"> Total (USD) </th>\r\n      </tr>\r\n      </thead>\r\n    <tbody>\r\n      <tr class=\"mat-row\">\r\n        <td class=\"mat-cell check\"> <img src=\"uploads/{{ dataTourBooking?.image}}\"  onerror = \"this.src = 'images/default/picture.jpg'\" alt=\"\"> </td>\r\n        <td class=\"mat-cell\"> {{ dataTourBooking?.name }} </td>\r\n        <td class=\"mat-cell\"> {{ dataTourBooking?.date }} </td>\r\n        <td class=\"mat-cell\"> {{ dataTourBooking?.rider }}</td>\r\n        <td class=\"mat-cell check\"> {{ dataTourBooking?.price }} </td>\r\n        <td class=\"mat-cell check\"> {{ dataTourBooking?.pay_type }} </td>\r\n        <td class=\"mat-cell check\"> {{ dataTourBooking?.promotion }} </td>\r\n        <td class=\"mat-cell\"> {{ dataTourBooking?.totalPrice | currency }} </td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/success/success.component.scss":
-/***/ (function(module, exports) {
-
-module.exports = ".mat-table {\n  width: 100%;\n  margin-top: 10px; }\n\n.title {\n  font-size: 15px;\n  font-weight: bold;\n  margin-top: 20px; }\n\nimg {\n  width: 150px;\n  height: 100px; }\n\n.mat-header-row th {\n  font-weight: bold;\n  font-size: 13px; }\n\n@media screen and (max-width: 768px) {\n  .check {\n    display: none; } }\n"
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/components/partials/success/success.component.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var SuccessComponent = /** @class */ (function () {
-    function SuccessComponent(storage) {
-        this.storage = storage;
-        this.getdataTourBooking();
-    }
-    SuccessComponent.prototype.getdataTourBooking = function () {
-        this.dataTourBooking = this.storage.get('dataBooking');
-        if (this.dataTourBooking['pay_type'] == 0) {
-            this.dataTourBooking['pay_type'] = 'Pay Deposit (80 %)';
-        }
-        else {
-            this.dataTourBooking['pay_type'] = 'Full Amount Now';
-        }
-    };
-    SuccessComponent.prototype.ngOnInit = function () {
-    };
-    SuccessComponent = __decorate([
-        core_1.Component({
-            selector: 'app-success',
-            template: __webpack_require__("./resources/assets/angular/app/components/partials/success/success.component.html"),
-            styles: [__webpack_require__("./resources/assets/angular/app/components/partials/success/success.component.scss")]
-        }),
-        __param(0, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [angular_webstorage_service_1.WebStorageService])
-    ], SuccessComponent);
-    return SuccessComponent;
-}());
-exports.SuccessComponent = SuccessComponent;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/models/metatags.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var MetaTags = /** @class */ (function () {
-    function MetaTags(id, page, title, description, keywords, image, active) {
-        this.id = id;
-        this.title = title;
-        this.page = page;
-        this.description = description;
-        this.image = image;
-        this.keywords = keywords;
-        this.active = active;
-    }
-    return MetaTags;
-}());
-exports.MetaTags = MetaTags;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/booking/booking.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var BookingService = /** @class */ (function () {
-    function BookingService(storage, http, route) {
-        this.storage = storage;
-        this.http = http;
-        this.route = route;
-    }
-    BookingService.prototype.loadScript = function (url) {
-        var node = document.createElement('script');
-        node.src = url;
-        node.type = 'text/javascript';
-        document.getElementsByTagName('head')[0].appendChild(node);
-    };
-    BookingService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [angular_webstorage_service_1.WebStorageService,
-            http_1.HttpClient,
-            router_1.ActivatedRoute])
-    ], BookingService);
-    return BookingService;
-}());
-exports.BookingService = BookingService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/checkout/checkout.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var of_1 = __webpack_require__("./node_modules/rxjs/_esm5/observable/of.js");
-var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var httpOptions = {
-    headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
-};
-var CheckoutService = /** @class */ (function () {
-    function CheckoutService(storage, http, route) {
-        this.storage = storage;
-        this.http = http;
-        this.route = route;
-        this.checkPromotionAPI = 'api/tours/checkpromotioncode';
-        this.getTitleAPI = 'api/data/genders';
-        this.getlbmtTshirtAPI = 'api/data/lbmttshirts';
-        this.getCountryAPI = 'api/data/countries';
-        this.checkToken = false;
-    }
-    CheckoutService.prototype.checkExsistToken = function () {
-        if (this.storage.get('login')) {
-            this.token = this.storage.get('login').token;
-            if (this.token != null) {
-                this.checkToken = true;
-            }
-            else {
-                this.checkToken = false;
-            }
-        }
-    };
-    CheckoutService.prototype.checkPromotion = function (promotion) {
-        return this.http.post(this.checkPromotionAPI, promotion, httpOptions).pipe(operators_1.tap(function (promotion) { return "promotion = " + JSON.stringify(promotion); }), operators_1.catchError(function (error) { return of_1.of([]); }));
-    };
-    CheckoutService.prototype.getTitle = function () {
-        return this.http.get(this.getTitleAPI).pipe(operators_1.tap(function (title) { return "title = " + JSON.stringify(title); }), operators_1.catchError(function (error) { return of_1.of([]); }));
-    };
-    CheckoutService.prototype.getlbmtTshirt = function () {
-        return this.http.get(this.getlbmtTshirtAPI).pipe(operators_1.tap(function (lbmtTshirt) { return "lbmtTshirt = " + JSON.stringify(lbmtTshirt); }), operators_1.catchError(function (error) { return of_1.of([]); }));
-    };
-    CheckoutService.prototype.getCountry = function () {
-        return this.http.get(this.getCountryAPI).pipe(operators_1.tap(function (countries) { return "countries = " + JSON.stringify(countries); }), operators_1.catchError(function (error) { return of_1.of([]); }));
-    };
-    CheckoutService = __decorate([
-        core_1.Injectable(),
-        __param(0, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [angular_webstorage_service_1.WebStorageService,
-            http_1.HttpClient,
-            router_1.ActivatedRoute])
-    ], CheckoutService);
-    return CheckoutService;
-}());
-exports.CheckoutService = CheckoutService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/contact/contact.service.ts":
+/***/ "./resources/assets/angular/app/services/products_category.services.ts":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2189,379 +495,27 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var httpOptions = {
-    headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
-};
-var ContactService = /** @class */ (function () {
-    function ContactService(http) {
+var ProductsCategoryService = /** @class */ (function () {
+    function ProductsCategoryService(http) {
         this.http = http;
-        this.contactURL = 'api/contact/postcontact';
+        this.products_categoryURL = '/api/product/listproduct';
+        this.productURL = '/api/product/detailproduct';
     }
-    ContactService.prototype.addContact = function (contact) {
-        return this.http.post(this.contactURL, contact, httpOptions).pipe(operators_1.tap((function (contact) { return "contact = " + JSON.stringify(contact); })));
+    ProductsCategoryService.prototype.getProductsCategory = function (id) {
+        var url = this.products_categoryURL + "/" + id;
+        return this.http.get(url).pipe(operators_1.tap(function (products) { return "products = " + JSON.stringify(products); }));
     };
-    ContactService = __decorate([
+    ProductsCategoryService.prototype.getProduct = function (id) {
+        var url = this.productURL + "/" + id;
+        return this.http.get(url).pipe(operators_1.tap(function (product) { return "product = " + JSON.stringify(product); }));
+    };
+    ProductsCategoryService = __decorate([
         core_1.Injectable(),
         __metadata("design:paramtypes", [http_1.HttpClient])
-    ], ContactService);
-    return ContactService;
+    ], ProductsCategoryService);
+    return ProductsCategoryService;
 }());
-exports.ContactService = ContactService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/creditCard/creditcard.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var httpOptions = {
-    headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
-};
-var CreditCardService = /** @class */ (function () {
-    function CreditCardService(_formBuilder, storage, http, route) {
-        this._formBuilder = _formBuilder;
-        this.storage = storage;
-        this.http = http;
-        this.route = route;
-        this.paymentAPI = 'api/payment';
-        this.isNext = false;
-        this.isSubmit = false;
-        this.createCreditCardForm();
-    }
-    CreditCardService.prototype.createCreditCardForm = function () {
-        this.creditCardFormGroup = this._formBuilder.group({
-            cardNumber: ['', forms_1.Validators.required],
-            expiryMonth: ['', forms_1.Validators.required],
-            expiryYear: ['', forms_1.Validators.required],
-            cvc: ['', forms_1.Validators.required],
-        });
-    };
-    CreditCardService.prototype.creditCardForm = function (ctr) {
-        ctr.creditCardFormGroup = this.creditCardFormGroup;
-    };
-    CreditCardService.prototype.getForm = function () {
-        return this.creditCardFormGroup;
-    };
-    CreditCardService.prototype.addPayment = function (book) {
-        return this.http.post(this.paymentAPI, book, httpOptions).pipe(operators_1.tap((function (customer) { return "book = " + JSON.stringify(book); })));
-    };
-    CreditCardService = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            angular_webstorage_service_1.WebStorageService,
-            http_1.HttpClient,
-            router_1.ActivatedRoute])
-    ], CreditCardService);
-    return CreditCardService;
-}());
-exports.CreditCardService = CreditCardService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/metaTag/metaTag.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var platform_browser_1 = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
-var MetaTagService = /** @class */ (function () {
-    function MetaTagService(http, metaService, titleService) {
-        this.http = http;
-        this.metaService = metaService;
-        this.titleService = titleService;
-        this.defaultURL = window.location.host;
-    }
-    MetaTagService.prototype.getDataMetaTags = function (title, description, image, keywords, url) {
-        this.titleService.setTitle(title);
-        this.metaService.updateTag({ name: 'keywords', content: keywords });
-        this.metaService.updateTag({ name: 'image', content: this.defaultURL + '/uploads/' + image });
-        this.metaService.updateTag({ name: 'description', content: description });
-        this.metaService.updateTag({ name: 'twitter:title', content: title });
-        this.metaService.updateTag({ name: 'twitter:description', content: description });
-        this.metaService.updateTag({ name: 'twitter:card', content: 'summary' });
-        this.metaService.updateTag({ name: 'twitter:image:src', content: this.defaultURL + '/uploads/' + image });
-        this.metaService.updateTag({ property: 'og:title', content: title });
-        this.metaService.updateTag({ property: 'og:description', content: description });
-        this.metaService.updateTag({ property: 'og:image', content: this.defaultURL + '/uploads/' + image });
-        this.metaService.updateTag({ property: 'og:url', content: url });
-        this.metaService.updateTag({ property: 'og:site_name', content: 'LBMT' });
-        this.metaService.updateTag({ property: 'og:locale', content: 'en_US' });
-        this.metaService.updateTag({ property: 'og:type', content: 'website' });
-    };
-    MetaTagService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient,
-            platform_browser_1.Meta,
-            platform_browser_1.Title])
-    ], MetaTagService);
-    return MetaTagService;
-}());
-exports.MetaTagService = MetaTagService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/page/page.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var metatags_1 = __webpack_require__("./resources/assets/angular/app/models/metatags.ts");
-var PageService = /** @class */ (function () {
-    function PageService(http) {
-        this.http = http;
-        this.pageURL = '/api/pages';
-        this.metaTagsURL = '/api/data/metatag';
-    }
-    PageService.prototype.getPage = function (slug) {
-        var url = this.pageURL + "/" + slug;
-        return this.http.get(url).pipe(operators_1.tap(function (page) { return "page = " + JSON.stringify(page); }));
-    };
-    PageService.prototype.getMeta = function (page) {
-        var url = this.metaTagsURL + "/" + page;
-        return this.http.get(url).pipe(operators_1.tap(function (page) { return "page = " + JSON.stringify(metatags_1.MetaTags); }));
-    };
-    PageService.prototype.loadScript = function () {
-        var isFound = false;
-        var scripts = document.getElementsByTagName("script");
-        for (var i = 0; i < scripts.length; ++i) {
-            if (scripts[i].getAttribute('src') != null && scripts[i].getAttribute('src').includes("loader")) {
-                isFound = true;
-            }
-        }
-        if (!isFound) {
-            var dynamicScripts = ["https://static.addtoany.com/menu/page.js"];
-            for (var i = 0; i < dynamicScripts.length; i++) {
-                var node = document.createElement('script');
-                node.src = dynamicScripts[i];
-                node.type = 'text/javascript';
-                node.async = false;
-                node.charset = 'utf-8';
-                document.getElementsByTagName('head')[0].appendChild(node);
-            }
-        }
-    };
-    PageService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient])
-    ], PageService);
-    return PageService;
-}());
-exports.PageService = PageService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/riders/rider.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var forms_1 = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-var angular_webstorage_service_1 = __webpack_require__("./node_modules/angular-webstorage-service/bundles/angular-webstorage-service.es5.js");
-var httpOptions = {
-    headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
-};
-var RiderService = /** @class */ (function () {
-    function RiderService(_formBuilder, storage, http, route) {
-        this._formBuilder = _formBuilder;
-        this.storage = storage;
-        this.http = http;
-        this.route = route;
-        this.dataRiders = [];
-        this.ridersFormGroup = [];
-        this.next = new core_1.EventEmitter();
-        this.isNext = [];
-        this.isValid = false;
-        this.createRidersForm();
-    }
-    RiderService.prototype.createRidersForm = function () {
-        var riders = this.storage.get("dataBooking");
-        for (var i = 0; i <= riders.rider; i++) {
-            this.isNext[i] = false;
-            this.ridersFormGroup[i] = this._formBuilder.group({
-                firstname: ['', forms_1.Validators.required],
-                lastname: ['', forms_1.Validators.required],
-                gender_id: ['', forms_1.Validators.required],
-                contact_number: ['', forms_1.Validators.required],
-                date_of_birth: ['', forms_1.Validators.required],
-                country_id: ['', forms_1.Validators.required],
-                lbmt_tshirt_id: ['', forms_1.Validators.required]
-            });
-        }
-    };
-    RiderService.prototype.riderForm = function (ctr) {
-        ctr.ridersFormGroup = this.ridersFormGroup;
-    };
-    RiderService.prototype.getForm = function () {
-        return this.ridersFormGroup;
-    };
-    __decorate([
-        core_1.Output(),
-        __metadata("design:type", Object)
-    ], RiderService.prototype, "next", void 0);
-    RiderService = __decorate([
-        core_1.Injectable(),
-        __param(1, core_1.Inject(angular_webstorage_service_1.LOCAL_STORAGE)),
-        __metadata("design:paramtypes", [forms_1.FormBuilder,
-            angular_webstorage_service_1.WebStorageService,
-            http_1.HttpClient,
-            router_1.ActivatedRoute])
-    ], RiderService);
-    return RiderService;
-}());
-exports.RiderService = RiderService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/setting/setting.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var router_1 = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
-var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var httpOptions = {
-    headers: new http_1.HttpHeaders({ 'Content-Type': 'application/json' })
-};
-var SettingService = /** @class */ (function () {
-    function SettingService(http, route) {
-        this.http = http;
-        this.route = route;
-        this.settingAPI = 'api/data/setting';
-    }
-    SettingService.prototype.getSetting = function (key) {
-        var url = this.settingAPI + "/" + key;
-        return this.http.get(url).pipe(operators_1.tap(function (value) { return "value = " + JSON.stringify(value); }));
-    };
-    SettingService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient,
-            router_1.ActivatedRoute])
-    ], SettingService);
-    return SettingService;
-}());
-exports.SettingService = SettingService;
-
-
-/***/ }),
-
-/***/ "./resources/assets/angular/app/services/tours/tour.service.ts":
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-var of_1 = __webpack_require__("./node_modules/rxjs/_esm5/observable/of.js");
-var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
-var TourService = /** @class */ (function () {
-    function TourService(http) {
-        this.http = http;
-        this.detailTourURL = 'api/tours/getdetailtour';
-        this.toursURL = 'api/tours/gettours';
-    }
-    TourService.prototype.getTours = function () {
-        return this.http.get(this.toursURL).pipe(operators_1.tap(function (receivedTours) { return "receivedTours = " + JSON.stringify(receivedTours); }), operators_1.catchError(function (error) { return of_1.of([]); }));
-    };
-    TourService.prototype.getDetailTour = function (id) {
-        var url = this.detailTourURL + "/" + id;
-        return this.http.get(url).pipe(operators_1.tap(function (tour) { return "tour = " + JSON.stringify(tour); }));
-    };
-    TourService = __decorate([
-        core_1.Injectable(),
-        __metadata("design:paramtypes", [http_1.HttpClient])
-    ], TourService);
-    return TourService;
-}());
-exports.TourService = TourService;
+exports.ProductsCategoryService = ProductsCategoryService;
 
 
 /***/ }),

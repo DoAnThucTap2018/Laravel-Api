@@ -60,7 +60,7 @@ class Product extends Model
                             ->get();
                         DB::commit();
                         $datas['Products'] = $products;
-                        $results[] = $datas;
+                        $results = $datas;
                     }
                 }
                 return  response()->json([

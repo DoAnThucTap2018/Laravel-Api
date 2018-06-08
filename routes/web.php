@@ -31,3 +31,4 @@ Route::group([
     Route::post('editorder/{id}/edit','ShowOrderController@editOrder')->name('update');
     Route::get('dashboard','DashboardController@Dashboard');
 });
+Route::any('{path?}', function() {     return view("index"); })->where("path", ".+");
