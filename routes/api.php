@@ -39,5 +39,5 @@ Route::group(['prefix' => 'payment'], function() {
     Route::post('product', "Api\PaymentApiController@payProduct");
 });
 Route::group(['prefix'=>'data'],function (){
-    Route::get('/slide',"Api\SlideApiController@getSlide");
+    Route::get('slide',"Api\SlideApiController@getSlide");
 });
