@@ -85,18 +85,21 @@ class Product extends Model
                 ->select('products.id','products.item_id','products.price','products.image',
                     'items.id','items.item_type_id','items.title','items.slug','items.description','items.summary',
                     'units.name')
-                ->where('products.id',$id)
+                ->where('items.id',$id)
                 ->get();
+           // return json_decode($detail_products);
             if (!isset($detail_products) and empty($detail_products)) {
                 return response()->json([
                     'success'  => false,
                     'message'  => 'Invalid ID supplied'],200);
             }
+
             return response()->json([
                 'success'  => true,
-                'data'     => $detail_products,
-                'message'  => 'Get data success'],200);
-//
+                   'data'     =>$detail_products[0],
+                'message'  => 'Get data success'
+            ],200);
+
         }catch (\Exception $e) {
             return response()->json('Internal Server Error', 500);
         }
@@ -127,12 +130,18 @@ class Product extends Model
                         ->where('item_categories.taxonomy_item_id', '=', $c->id)
                         ->get();
                     $datas['products'] = $products;
-                    $results[] = $datas;
+                    $results = $datas;
                 }
             }
-            return $results;
+            return response()->json([
+                'success'  => true,
+                'data'     =>$results,
+                'message'  => 'Get data success'
+            ],200);
         }
-        return false;
+        return response()->json([
+            'success'  => false,
+            'message'  => 'Invalid ID supplied'],200);
     }
 
     /*
