@@ -34,6 +34,7 @@ Route::group(['prefix' => 'product'], function() {
     Route::get('/orderproduct/{id}', "Api\ProductApiController@orderProduct");
     Route::get('menu', "Api\ProductApiController@menu");
     Route::get('index', "Api\ProductApiController@index");
+    Route::get('/category/{id}/{i}', "Api\ProductApiController@category");
 });
 Route::group(['prefix' => 'payment'], function() {
     Route::post('product', "Api\PaymentApiController@payProduct");

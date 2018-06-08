@@ -47,4 +47,10 @@ class ProductApiController extends Controller
         $allProduct=  $allProduct->getAllProductModel();
         return  $allProduct;
     }
+    public function category($id, $i)
+    {
+        $category=new Product();
+        $category=$category->categoryProductModel($id,$i);
+        return  $category;
+    }
 }
