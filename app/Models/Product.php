@@ -130,7 +130,7 @@ class Product extends Model
                         ->where('item_categories.taxonomy_item_id', '=', $c->id)
                         ->get();
                     $datas['products'] = $products;
-                    $results = $datas;
+                    $results[] = $datas;
                 }
             }
             return response()->json([

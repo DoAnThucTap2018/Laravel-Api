@@ -101,12 +101,14 @@ var app_routes_1 = __webpack_require__("./resources/assets/angular/app/app.route
 var ngx_toastr_1 = __webpack_require__("./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
 //services
 var products_category_services_1 = __webpack_require__("./resources/assets/angular/app/services/products_category.services.ts");
+var home_services_1 = __webpack_require__("./resources/assets/angular/app/services/home.services.ts");
 //components
 var app_component_1 = __webpack_require__("./resources/assets/angular/app/app.component.ts");
 var header_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.ts");
 var footer_component_1 = __webpack_require__("./resources/assets/angular/app/components/partials/footer/footer.component.ts");
 var products_category_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.ts");
 var product_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.ts");
+var home_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.ts");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -118,6 +120,7 @@ var AppModule = /** @class */ (function () {
                 footer_component_1.FooterComponent,
                 products_category_component_1.ProductsCategoryComponent,
                 product_component_1.ProductComponent,
+                home_component_1.HomeComponent,
             ],
             imports: [
                 animations_1.BrowserAnimationsModule,
@@ -208,7 +211,8 @@ var AppModule = /** @class */ (function () {
                 material_1.MatTooltipModule,
             ],
             providers: [
-                products_category_services_1.ProductsCategoryService
+                products_category_services_1.ProductsCategoryService,
+                home_services_1.HomeService
             ],
             bootstrap: [app_component_1.AppComponent]
         })
@@ -228,7 +232,12 @@ exports.AppModule = AppModule;
 Object.defineProperty(exports, "__esModule", { value: true });
 var products_category_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/products-category/products-category.component.ts");
 var product_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/product/product.component.ts");
+var home_component_1 = __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.ts");
 exports.appRoutes = [
+    {
+        path: '',
+        component: home_component_1.HomeComponent
+    },
     {
         path: 'product-category/:id',
         component: products_category_component_1.ProductsCategoryComponent
@@ -242,10 +251,70 @@ exports.appRoutes = [
 
 /***/ }),
 
-/***/ "./resources/assets/angular/app/components/pages/product/product.component.html":
+/***/ "./resources/assets/angular/app/components/pages/home/home.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\t<div class=\"rev-slider\">\n\t<div class=\"fullwidthbanner-container\">\n\t\t\t\t\t<div class=\"fullwidthbanner\">\n\t\t\t\t\t\t<div class=\"bannercontainer\" >\n\t\t\t\t\t    <div class=\"banner\" >\n\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t<li style=\"width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0;\"><img src=\"assets/dest/images/thumbs/1.jpg\" alt=\"\" srcset=\"\"></li>\n\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t<div class=\"tp-bannertimer\"></div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<!--slider-->\n\t</div>\n\t<div class=\"container\">\n\t\t<div id=\"content\" class=\"space-top-none\">\n\t\t\t<div class=\"main-content\">\n\t\t\t\t<div class=\"space60\">&nbsp;</div>\n\t\t\t\t<div class=\"row\" *ngFor = \"let category of products\">\n\t\t\t\t\t<div class=\"col-sm-12\">\n\t\t\t\t\t\t<div class=\"beta-products-list\">\n\t\t\t\t\t\t\t<h4>{{category?.cat_name}}</h4>\n\t\t\t\t\t\t\t<div class=\"beta-products-details\">\n\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t\t<div class=\"col-sm-3\" *ngFor = \"let product of category.products\">\n\t\t\t\t\t\t\t\t\t<div class=\"single-item\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"single-item-header\">\n\t\t\t\t\t\t\t\t\t\t\t<a routerLink = \"/product/{{product.id}}\"><img src=\"images/default/{{product.product_image}}\" alt=\"\"></a>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"single-item-body\">\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-title\">{{product.title}}</p>\n\t\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-price\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span>{{product.price}}</span>\n\t\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t<div class=\"single-item-caption\">\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"add-to-cart pull-left\" href=\"shopping_cart.html\"><i class=\"fa fa-shopping-cart\"></i></a>\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"beta-btn primary\" routerLink = \"/product/{{product.id}}\">Details <i class=\"fa fa-chevron-right\"></i></a>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div> <!-- .beta-products-list -->\n\n\t\t\t\t\t\t<div class=\"space50\">&nbsp;</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div> <!-- end section with sidebar and main content -->\n\n\n\t\t\t</div> <!-- .main-content -->\n\t\t</div> <!-- #content -->\n\t</div> <!-- .container -->\n"
+
+/***/ }),
+
+/***/ "./resources/assets/angular/app/components/pages/home/home.component.scss":
 /***/ (function(module, exports) {
 
 module.exports = ""
+
+/***/ }),
+
+/***/ "./resources/assets/angular/app/components/pages/home/home.component.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var home_services_1 = __webpack_require__("./resources/assets/angular/app/services/home.services.ts");
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent(_homeService) {
+        this._homeService = _homeService;
+        this.getProducts();
+    }
+    HomeComponent.prototype.getProducts = function () {
+        var _this = this;
+        this._homeService.getProducts().subscribe(function (res) {
+            _this.products = res['data'];
+            console.log(_this.products);
+        });
+    };
+    HomeComponent.prototype.ngOnInit = function () {
+    };
+    HomeComponent = __decorate([
+        core_1.Component({
+            selector: 'app-home',
+            template: __webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.html"),
+            styles: [__webpack_require__("./resources/assets/angular/app/components/pages/home/home.component.scss")]
+        }),
+        __metadata("design:paramtypes", [home_services_1.HomeService])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+exports.HomeComponent = HomeComponent;
+
+
+/***/ }),
+
+/***/ "./resources/assets/angular/app/components/pages/product/product.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\r\n\r\n\t<div class=\"inner-header\">\r\n\t\t<div class=\"container\">\r\n\t\t\t<div class=\"pull-left\">\r\n\t\t\t\t<h6 class=\"inner-title\">Product</h6>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"pull-right\">\r\n\t\t\t\t<div class=\"beta-breadcrumb font-large\">\r\n\t\t\t\t\t<a href=\"index.html\">Home</a> / <span>Product</span>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"clearfix\"></div>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<div class=\"container\">\r\n\t\t<div id=\"content\">\r\n\t\t\t<div class=\"row\">\r\n\t\t\t\t<div class=\"col-sm-9\">\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t\t\t\t<img src=\"images/default/{{product.image}}\" alt=\"\">\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"col-sm-8\">\r\n\t\t\t\t\t\t\t<div class=\"single-item-body\">\r\n\t\t\t\t\t\t\t\t<p class=\"single-item-title\">{{product.title}}</p>\r\n\t\t\t\t\t\t\t\t<p class=\"single-item-price\">\r\n\t\t\t\t\t\t\t\t\t<span>{{product.price}}</span>\r\n\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\r\n\t\t\t\t\t\t\t<div class=\"space20\">&nbsp;</div>\r\n\r\n\t\t\t\t\t\t\t<div class=\"single-item-desc\">\r\n\t\t\t\t\t\t\t\t<p>{{product.summary}}</p>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"space20\">&nbsp;</div>\r\n\r\n\t\t\t\t\t\t\t<p>Options:</p>\r\n\t\t\t\t\t\t\t<div class=\"single-item-options\">\r\n\t\t\t\t\t\t\t\t<select class=\"wc-select\" name=\"size\">\r\n\t\t\t\t\t\t\t\t\t<option>Size</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"XS\">XS</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"S\">S</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"M\">M</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"L\">L</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"XL\">XL</option>\r\n\t\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t\t\t<select class=\"wc-select\" name=\"color\">\r\n\t\t\t\t\t\t\t\t\t<option>Color</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"Red\">Red</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"Green\">Green</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"Yellow\">Yellow</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"Black\">Black</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"White\">White</option>\r\n\t\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t\t\t<select class=\"wc-select\" name=\"color\">\r\n\t\t\t\t\t\t\t\t\t<option>Qty</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"1\">1</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"2\">2</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"3\">3</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"4\">4</option>\r\n\t\t\t\t\t\t\t\t\t<option value=\"5\">5</option>\r\n\t\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t\t\t<a class=\"add-to-cart\" href=\"#\"><i class=\"fa fa-shopping-cart\"></i></a>\r\n\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"space40\">&nbsp;</div>\r\n\t\t\t\t\t<div class=\"woocommerce-tabs\">\r\n\t\t\t\t\t\t<ul class=\"tabs\">\r\n\t\t\t\t\t\t\t<li><a href=\"#tab-description\">Description</a></li>\r\n\t\t\t\t\t\t\t<li><a href=\"#tab-reviews\">Reviews (0)</a></li>\r\n\t\t\t\t\t\t</ul>\r\n\r\n\t\t\t\t\t\t<div class=\"panel\" id=\"tab-description\">\r\n\t\t\t\t\t\t\t{{product.description}}\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"panel\" id=\"tab-reviews\">\r\n\t\t\t\t\t\t\t<p>No Reviews</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"space50\">&nbsp;</div>\r\n\t\t\t\t\t<div class=\"beta-products-list\">\r\n\t\t\t\t\t\t<h4>Related Products</h4>\r\n\r\n\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t\t\t\t\t<div class=\"single-item\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-header\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"product.html\"><img src=\"assets/dest/images/products/4.jpg\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-body\">\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-title\">Sample Woman Top</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-price\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span>$34.55</span>\r\n\t\t\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-caption\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"add-to-cart pull-left\" href=\"product.html\"><i class=\"fa fa-shopping-cart\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"beta-btn primary\" href=\"product.html\">Details <i class=\"fa fa-chevron-right\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t\t\t\t\t<div class=\"single-item\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-header\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"product.html\"><img src=\"assets/dest/images/products/5.jpg\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-body\">\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-title\">Sample Woman Top</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-price\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span>$34.55</span>\r\n\t\t\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-caption\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"add-to-cart pull-left\" href=\"product.html\"><i class=\"fa fa-shopping-cart\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"beta-btn primary\" href=\"product.html\">Details <i class=\"fa fa-chevron-right\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col-sm-4\">\r\n\t\t\t\t\t\t\t\t<div class=\"single-item\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"ribbon-wrapper\"><div class=\"ribbon sale\">Sale</div></div>\r\n\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-header\">\r\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\"><img src=\"assets/dest/images/products/6.jpg\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-body\">\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-title\">Sample Woman Top</p>\r\n\t\t\t\t\t\t\t\t\t\t<p class=\"single-item-price\">\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"flash-del\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t\t\t<span class=\"flash-sale\">$33.55</span>\r\n\t\t\t\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"single-item-caption\">\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"add-to-cart pull-left\" href=\"#\"><i class=\"fa fa-shopping-cart\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<a class=\"beta-btn primary\" href=\"#\">Details <i class=\"fa fa-chevron-right\"></i></a>\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"clearfix\"></div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div> <!-- .beta-products-list -->\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-sm-3 aside\">\r\n\t\t\t\t\t<div class=\"widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">Best Sellers</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<div class=\"beta-sales beta-lists\">\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/1.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/2.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/3.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/4.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div> <!-- best sellers widget -->\r\n\t\t\t\t\t<div class=\"widget\">\r\n\t\t\t\t\t\t<h3 class=\"widget-title\">New Products</h3>\r\n\t\t\t\t\t\t<div class=\"widget-body\">\r\n\t\t\t\t\t\t\t<div class=\"beta-sales beta-lists\">\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/1.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/2.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/3.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div class=\"media beta-sales-item\">\r\n\t\t\t\t\t\t\t\t\t<a class=\"pull-left\" href=\"product.html\"><img src=\"assets/dest/images/products/sales/4.png\" alt=\"\"></a>\r\n\t\t\t\t\t\t\t\t\t<div class=\"media-body\">\r\n\t\t\t\t\t\t\t\t\t\tSample Woman Top\r\n\t\t\t\t\t\t\t\t\t\t<span class=\"beta-sales-price\">$34.55</span>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div> <!-- best sellers widget -->\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div> <!-- #content -->\r\n\t</div> <!-- .container -->\r\n"
 
 /***/ }),
 
@@ -353,8 +422,7 @@ var ProductsCategoryComponent = /** @class */ (function () {
         var _this = this;
         var id = +this.route.snapshot.paramMap.get('id');
         this._productscategoryService.getProductsCategory(id).subscribe(function (res) {
-            _this.products_category = res['data'];
-            console.log(_this.products_category['Category_name']);
+            _this.products_category = res;
         });
     };
     ProductsCategoryComponent.prototype.ngOnInit = function () {
@@ -429,7 +497,7 @@ exports.FooterComponent = FooterComponent;
 /***/ "./resources/assets/angular/app/components/partials/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"header\">\r\n      <div class=\"header-top\">\r\n        <div class=\"container\">\r\n          <div class=\"pull-left auto-width-left\">\r\n            <ul class=\"top-menu menu-beta l-inline\">\r\n              <li><a href=\"\"><i class=\"fa fa-home\"></i> 101 Mai Xuân Thưởng, Vĩnh Hòa, Nha Trang</a></li>\r\n              <li><a href=\"\"><i class=\"fa fa-phone\"></i> 0163 296 7751</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"pull-right auto-width-right\">\r\n            <ul class=\"top-details menu-beta l-inline\">\r\n              <li><a href=\"#\"><i class=\"fa fa-user\"></i>Tài khoản</a></li>\r\n              <li><a href=\"#\">Đăng kí</a></li>\r\n              <li><a href=\"#\">Đăng nhập</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-top -->\r\n      <div class=\"header-body\">\r\n        <div class=\"container beta-relative\">\r\n          <div class=\"pull-left\">\r\n            <a href=\"index.html\" id=\"logo\"><img src=\"assets/dest/images/logo-cake.png\" width=\"200px\" alt=\"\"></a>\r\n          </div>\r\n          <div class=\"pull-right beta-components space-left ov\">\r\n            <div class=\"space10\">&nbsp;</div>\r\n            <div class=\"beta-comp\">\r\n              <form role=\"search\" method=\"get\" id=\"searchform\" action=\"/\">\r\n                <input type=\"text\" value=\"\" name=\"s\" id=\"s\" placeholder=\"Nhập từ khóa...\" />\r\n                <button class=\"fa fa-search\" type=\"submit\" id=\"searchsubmit\"></button>\r\n              </form>\r\n            </div>\r\n\r\n            <div class=\"beta-comp\">\r\n              <div class=\"cart\">\r\n                <div class=\"beta-select\"><i class=\"fa fa-shopping-cart\"></i> Giỏ hàng (Trống) <i class=\"fa fa-chevron-down\"></i></div>\r\n                <div class=\"beta-dropdown cart-body\">\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/1.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/2.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/3.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-caption\">\r\n                    <div class=\"cart-total text-right\">Tổng tiền: <span class=\"cart-total-value\">$34.55</span></div>\r\n                    <div class=\"clearfix\"></div>\r\n\r\n                    <div class=\"center\">\r\n                      <div class=\"space10\">&nbsp;</div>\r\n                      <a href=\"checkout.html\" class=\"beta-btn primary text-center\">Đặt hàng <i class=\"fa fa-chevron-right\"></i></a>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div> <!-- .cart -->\r\n            </div>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-body -->\r\n      <div class=\"header-bottom\" style=\"background-color: #0277b8;\">\r\n        <div class=\"container\">\r\n          <a class=\"visible-xs beta-menu-toggle pull-right\" href=\"#\"><span class='beta-menu-toggle-text'>Menu</span> <i class=\"fa fa-bars\"></i></a>\r\n          <div class=\"visible-xs clearfix\"></div>\r\n          <nav class=\"main-menu\">\r\n            <ul class=\"l-inline ov\">\r\n              <li><a href=\"/tours\">Trang chủ</a></li>\r\n              <li><a href=\"#\">Sản phẩm</a>\r\n                <ul class=\"sub-menu\">\r\n                  <li><a routerLink = \"/product-category/3\">Sản phẩm 1</a></li>\r\n                </ul>\r\n              </li>\r\n              <li><a href=\"about.html\">Giới thiệu</a></li>\r\n              <li><a href=\"contacts.html\">Liên hệ</a></li>\r\n            </ul>\r\n            <div class=\"clearfix\"></div>\r\n          </nav>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-bottom -->\r\n    </div> <!-- #header -->\r\n\r\n\r\n    <!--<mat-toolbar-row>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/']\" [routerLinkActiveOptions] = \"{ exact : true}\">Trang Chủ <span class=\"sr-only\">(current)</span></a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/tours']\">Sản Phẩm</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/about']\">Giới Thiệu</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/contact']\">Liên Hệ</a>-->\r\n    <!--</mat-toolbar-row>-->\r\n\r\n    <!--<mat-sidenav-content>-->\r\n      <!--<router-outlet></router-outlet>-->\r\n      <!--<app-footer></app-footer>-->\r\n    <!--</mat-sidenav-content>-->\r\n\r\n"
+module.exports = "<div id=\"header\">\r\n      <div class=\"header-top\">\r\n        <div class=\"container\">\r\n          <div class=\"pull-left auto-width-left\">\r\n            <ul class=\"top-menu menu-beta l-inline\">\r\n              <li><a href=\"\"><i class=\"fa fa-home\"></i> 101 Mai Xuân Thưởng, Vĩnh Hòa, Nha Trang</a></li>\r\n              <li><a href=\"\"><i class=\"fa fa-phone\"></i> 0163 296 7751</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"pull-right auto-width-right\">\r\n            <ul class=\"top-details menu-beta l-inline\">\r\n              <li><a href=\"#\"><i class=\"fa fa-user\"></i>Tài khoản</a></li>\r\n              <li><a href=\"#\">Đăng kí</a></li>\r\n              <li><a href=\"#\">Đăng nhập</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-top -->\r\n      <div class=\"header-body\">\r\n        <div class=\"container beta-relative\">\r\n          <div class=\"pull-left\">\r\n            <a routerLink = \"/\" id=\"logo\"><img src=\"assets/dest/images/logo-cake.png\" width=\"200px\" alt=\"\"></a>\r\n          </div>\r\n          <div class=\"pull-right beta-components space-left ov\">\r\n            <div class=\"space10\">&nbsp;</div>\r\n            <div class=\"beta-comp\">\r\n              <form role=\"search\" method=\"get\" id=\"searchform\" action=\"/\">\r\n                <input type=\"text\" value=\"\" name=\"s\" id=\"s\" placeholder=\"Nhập từ khóa...\" />\r\n                <button class=\"fa fa-search\" type=\"submit\" id=\"searchsubmit\"></button>\r\n              </form>\r\n            </div>\r\n\r\n            <div class=\"beta-comp\">\r\n              <div class=\"cart\">\r\n                <div class=\"beta-select\"><i class=\"fa fa-shopping-cart\"></i> Giỏ hàng (Trống) <i class=\"fa fa-chevron-down\"></i></div>\r\n                <div class=\"beta-dropdown cart-body\">\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/1.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/2.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-item\">\r\n                    <div class=\"media\">\r\n                      <a class=\"pull-left\" href=\"#\"><img src=\"assets/dest/images/products/cart/3.png\" alt=\"\"></a>\r\n                      <div class=\"media-body\">\r\n                        <span class=\"cart-item-title\">Sample Woman Top</span>\r\n                        <span class=\"cart-item-options\">Size: XS; Colar: Navy</span>\r\n                        <span class=\"cart-item-amount\">1*<span>$49.50</span></span>\r\n                      </div>\r\n                    </div>\r\n                  </div>\r\n\r\n                  <div class=\"cart-caption\">\r\n                    <div class=\"cart-total text-right\">Tổng tiền: <span class=\"cart-total-value\">$34.55</span></div>\r\n                    <div class=\"clearfix\"></div>\r\n\r\n                    <div class=\"center\">\r\n                      <div class=\"space10\">&nbsp;</div>\r\n                      <a href=\"checkout.html\" class=\"beta-btn primary text-center\">Đặt hàng <i class=\"fa fa-chevron-right\"></i></a>\r\n                    </div>\r\n                  </div>\r\n                </div>\r\n              </div> <!-- .cart -->\r\n            </div>\r\n          </div>\r\n          <div class=\"clearfix\"></div>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-body -->\r\n      <div class=\"header-bottom\" style=\"background-color: #0277b8;\">\r\n        <div class=\"container\">\r\n          <a class=\"visible-xs beta-menu-toggle pull-right\" href=\"#\"><span class='beta-menu-toggle-text'>Menu</span> <i class=\"fa fa-bars\"></i></a>\r\n          <div class=\"visible-xs clearfix\"></div>\r\n          <nav class=\"main-menu\">\r\n            <ul class=\"l-inline ov\">\r\n              <li><a routerLink = \"/\" >Trang chủ</a></li>\r\n              <li><a href=\"#\">Sản phẩm</a>\r\n                <ul class=\"sub-menu\">\r\n                  <li *ngFor = \"let item of menu\">\r\n                    <a routerLink = \"/product-category/{{item.id}}\">{{item.taxonomy_item_name}}</a>\r\n                  </li>\r\n                </ul>\r\n              </li>\r\n              <li><a href=\"about.html\">Giới thiệu</a></li>\r\n              <li><a href=\"contacts.html\">Liên hệ</a></li>\r\n            </ul>\r\n            <div class=\"clearfix\"></div>\r\n          </nav>\r\n        </div> <!-- .container -->\r\n      </div> <!-- .header-bottom -->\r\n    </div> <!-- #header -->\r\n\r\n\r\n    <!--<mat-toolbar-row>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/']\" [routerLinkActiveOptions] = \"{ exact : true}\">Trang Chủ <span class=\"sr-only\">(current)</span></a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/tours']\">Sản Phẩm</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/about']\">Giới Thiệu</a>-->\r\n      <!--<a class=\"nav-item nav-link\" routerLinkActive = \"active\" [routerLink] = \"['/page/contact']\">Liên Hệ</a>-->\r\n    <!--</mat-toolbar-row>-->\r\n\r\n    <!--<mat-sidenav-content>-->\r\n      <!--<router-outlet></router-outlet>-->\r\n      <!--<app-footer></app-footer>-->\r\n    <!--</mat-sidenav-content>-->\r\n\r\n"
 
 /***/ }),
 
@@ -457,9 +525,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 // services
+var home_services_1 = __webpack_require__("./resources/assets/angular/app/services/home.services.ts");
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+    function HeaderComponent(_homeService) {
+        this._homeService = _homeService;
+        this.getMenu();
     }
+    HeaderComponent.prototype.getMenu = function () {
+        var _this = this;
+        this._homeService.getMenu()
+            .subscribe(function (menu) {
+            _this.menu = menu;
+        });
+    };
     HeaderComponent.prototype.ngOnInit = function () {
     };
     HeaderComponent = __decorate([
@@ -468,11 +546,53 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.html"),
             styles: [__webpack_require__("./resources/assets/angular/app/components/partials/header/header.component.scss")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [home_services_1.HomeService])
     ], HeaderComponent);
     return HeaderComponent;
 }());
 exports.HeaderComponent = HeaderComponent;
+
+
+/***/ }),
+
+/***/ "./resources/assets/angular/app/services/home.services.ts":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var http_1 = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+var of_1 = __webpack_require__("./node_modules/rxjs/_esm5/observable/of.js");
+var operators_1 = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
+var HomeService = /** @class */ (function () {
+    function HomeService(http) {
+        this.http = http;
+        this.menu_URL = '/api/product/menu';
+        this.products_URL = '/api/product/index';
+    }
+    HomeService.prototype.getMenu = function () {
+        return this.http.get(this.menu_URL).pipe(operators_1.tap(function (menu) { return "menu = " + JSON.stringify(menu); }), operators_1.catchError(function (error) { return of_1.of([]); }));
+    };
+    HomeService.prototype.getProducts = function () {
+        return this.http.get(this.products_URL).pipe(operators_1.tap(function (products) { return "products = " + JSON.stringify(products); }));
+    };
+    HomeService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [http_1.HttpClient])
+    ], HomeService);
+    return HomeService;
+}());
+exports.HomeService = HomeService;
 
 
 /***/ }),

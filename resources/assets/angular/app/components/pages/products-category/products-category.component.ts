@@ -24,8 +24,7 @@ public products_category: Product[];
     {
         const id = +this.route.snapshot.paramMap.get('id');
         this._productscategoryService.getProductsCategory(id).subscribe((res:any) => {
-            this.products_category = res['data'];
-            console.log(this.products_category['Category_name']);
+            this.products_category = res;
         });
     }
   ngOnInit() {

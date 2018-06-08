@@ -59,13 +59,14 @@ import { ToastrModule } from 'ngx-toastr';
 
 //services
 import { ProductsCategoryService } from './services/products_category.services';
-
+import { HomeService } from './services/home.services';
 //components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { FooterComponent } from './components/partials/footer/footer.component';
 import { ProductsCategoryComponent } from './components/pages/products-category/products-category.component';
 import { ProductComponent } from './components/pages/product/product.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 
 @NgModule({
@@ -75,6 +76,7 @@ import { ProductComponent } from './components/pages/product/product.component';
     FooterComponent,
     ProductsCategoryComponent,
     ProductComponent,
+    HomeComponent,
 
   ],
   imports: [
@@ -168,7 +170,8 @@ import { ProductComponent } from './components/pages/product/product.component';
   ],
 
   providers: [
-      ProductsCategoryService
+      ProductsCategoryService,
+      HomeService
   ],
 
   bootstrap: [AppComponent]
