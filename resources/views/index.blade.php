@@ -27,24 +27,12 @@
 	<script src="assets/dest/vendors/colorbox/jquery.colorbox-min.js"></script>
 	<script src="assets/dest/vendors/animo/Animo.js"></script>
 	<script src="assets/dest/vendors/dug/dug.js"></script>
-	<script src="assets/dest/js/scripts.min.js"></script>
+	<!-- <script src="assets/dest/js/scripts.min.js"></script> -->
 	<script src="assets/dest/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script src="assets/dest/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script src="assets/dest/js/waypoints.min.js"></script>
 	<script src="assets/dest/js/wow.min.js"></script>
-	<!--customjs-->
-	<script src="assets/dest/js/custom2.js"></script>
-	<script>
-	$(document).ready(function($) {    
-		$(window).scroll(function(){
-			if($(this).scrollTop()>150){
-			$(".header-bottom").addClass('fixNav')
-			}else{
-				$(".header-bottom").removeClass('fixNav')
-			}}
-		)
-	})
-	</script>
+	
 
 <script type="text/javascript" src="js/app/inline.bundle.js"></script>
 <script type="text/javascript" src="js/app/polyfills.bundle.js"></script>

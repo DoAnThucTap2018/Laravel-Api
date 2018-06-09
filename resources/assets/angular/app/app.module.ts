@@ -67,6 +67,8 @@ import { FooterComponent } from './components/partials/footer/footer.component';
 import { ProductsCategoryComponent } from './components/pages/products-category/products-category.component';
 import { ProductComponent } from './components/pages/product/product.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 
 @NgModule({
@@ -77,6 +79,8 @@ import { HomeComponent } from './components/pages/home/home.component';
     ProductsCategoryComponent,
     ProductComponent,
     HomeComponent,
+    AboutComponent,
+    ContactComponent,
 
   ],
   imports: [

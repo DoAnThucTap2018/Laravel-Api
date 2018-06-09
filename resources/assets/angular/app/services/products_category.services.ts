@@ -15,6 +15,7 @@ export class ProductsCategoryService {
     public product: object;
     private products_categoryURL = '/api/product/listproduct';
     private productURL = '/api/product/detailproduct';
+    private relatedURL = '/api/product/category';
 
 
     getProductsCategory(id: number): Observable<Product> {
@@ -27,6 +28,13 @@ export class ProductsCategoryService {
         const url = `${this.productURL}/${id}`;
         return this.http.get<Product>(url).pipe(
             tap(product => `product = ${JSON.stringify(product)}`),
+        );
+    }
+    getRelatedProduct(category_id: number, product_id: number)
+    {
+        const url = `${this.relatedURL}/${category_id}/${product_id}`;
+        return this.http.get<Product>(url).pipe(
+            tap(relatedProduct => `relatedProduct = ${JSON.stringify(relatedProduct)}`),
         );
     }
 

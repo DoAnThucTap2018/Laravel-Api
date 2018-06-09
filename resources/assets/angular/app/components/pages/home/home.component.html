@@ -30,7 +30,7 @@
 								<div class="col-sm-3" *ngFor = "let product of category.products">
 									<div class="single-item">
 										<div class="single-item-header">
-											<a routerLink = "/product/{{product.id}}"><img src="images/default/{{product.product_image}}" alt=""></a>
+											<a routerLink = "/product/{{product.id}}"><img src="images/{{product.image}}" alt=""></a>
 										</div>
 										<div class="single-item-body">
 											<p class="single-item-title">{{product.title}}</p>

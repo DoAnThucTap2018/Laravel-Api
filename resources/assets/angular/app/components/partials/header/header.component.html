@@ -91,15 +91,15 @@
           <nav class="main-menu">
             <ul class="l-inline ov">
               <li><a routerLink = "/" >Trang chủ</a></li>
-              <li><a href="#">Sản phẩm</a>
+              <li><a >Sản phẩm</a>
                 <ul class="sub-menu">
                   <li *ngFor = "let item of menu">
-                    <a routerLink = "/product-category/{{item.id}}">{{item.taxonomy_item_name}}</a>
+                    <a href = "/product-category/{{item.id}}">{{item.taxonomy_item_name}}</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="about.html">Giới thiệu</a></li>
-              <li><a href="contacts.html">Liên hệ</a></li>
+              <li><a routerLink = "/about">Giới thiệu</a></li>
+              <li><a routerLink = "/contact">Liên hệ</a></li>
             </ul>
             <div class="clearfix"></div>
           </nav>

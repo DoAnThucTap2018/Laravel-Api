@@ -12,21 +12,30 @@ import { ProductsCategoryService } from './../../../services/products_category.s
 })
 export class ProductComponent implements OnInit {
   public product: Product[];
+  public relatedProducts: Product[];
   constructor(
       private http: HttpClient,
       private route: ActivatedRoute,
       private  _productscategoryService: ProductsCategoryService
   ) {
     this.getProduct();
+
   }
     getProduct():void
     {
         const id = +this.route.snapshot.paramMap.get('id');
         this._productscategoryService.getProduct(id).subscribe((res:any) => {
             this.product = res['data'];
-            console.log(this.product);
+            let category_id = this.product['taxonomy_item_id'];
+            this._productscategoryService.getRelatedProduct(category_id,id).subscribe((res:any) => {
+                this.relatedProducts = res['data'];
+                 console.log(this.relatedProducts);
+            });
         });
+
     }
+
+   
   ngOnInit() {
 
   }
