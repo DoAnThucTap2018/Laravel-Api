@@ -169,7 +169,6 @@ class ProductCrudController extends CrudController
             'aspect_ratio'  => 0,         // commit or set to 0 to allow any aspect ratio
            // 'disk' => 'uploads',        // in case you need to show images from a different disk
             'prefix'        => 'images/', // in case you only store the filename in the database, this text will be prepended to the database value
-            'default'       => 'default/picture.jpg',
             'key'           => 'product.image',
             'entity'        => 'product',
             'attribute'     => 'image',

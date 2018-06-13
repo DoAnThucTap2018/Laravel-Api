@@ -108,7 +108,7 @@ class TaxonomyItem extends Model
     }
     public function taxonomy()
     {
-        return $this->belongsTo('App\Models\Taxonomies');
+        return $this->belongsTo('App\Models\Taxonomy');
     }
     public function parent()
     {
@@ -144,8 +144,8 @@ class TaxonomyItem extends Model
     public function setImageAttribute($value)
     {
         $attribute_name = "image";
-        $disk = "uploads";
-        $destination_path = "file/categories";
+        $disk = "images";
+        $destination_path = "default";
 
         // if the image was erased
         if ($value==null) {

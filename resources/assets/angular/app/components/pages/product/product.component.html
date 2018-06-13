@@ -21,13 +21,13 @@
 
 					<div class="row">
 						<div class="col-sm-4">
-							<img src="images/{{product?.image}}" alt="">
+							<img src="/images/{{product?.image}}" alt="">
 						</div>
 						<div class="col-sm-8">
 							<div class="single-item-body">
 								<p class="single-item-title">{{product?.title}}</p>
 								<p class="single-item-price">
-									<span>{{product?.price}}</span>
+									<span>{{product?.price}} vnd</span>
 								</p>
 							</div>
 
@@ -43,11 +43,8 @@
 							<div class="single-item-options">
 								<select class="wc-select" name="size">
 									<option>Size</option>
-									<option value="XS">XS</option>
-									<option value="S">S</option>
-									<option value="M">M</option>
-									<option value="L">L</option>
-									<option value="XL">XL</option>
+									<option value="XS">Lớn</option>
+									<option value="S">Nhỏ</option>
 								</select>
 								<select class="wc-select" name="color">
 									<option>Color</option>
@@ -95,7 +92,7 @@
 									<a class="pull-left" href = "/product/{{relatedProduct.id}}"><img src="images/{{relatedProduct?.product_image}}" alt=""></a>
 									<div class="media-body">
 										<a class="pull-left" href = "/product/{{relatedProduct.id}}">{{relatedProduct?.title}}</a>
-										<span class="beta-sales-price">{{relatedProduct.price}}</span>
+										<span class="beta-sales-price">{{relatedProduct.price}} vnđ</span>
 									</div>
 								</div>
 							</div>

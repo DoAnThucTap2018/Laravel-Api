@@ -55,7 +55,7 @@
                 <div class="icon">
                     <i class="fa fa-puzzle-piece"></i>
                 </div>
-                <a href="{{ url('admin/dashboard') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="{{ url('admin/taxonomy_item') }}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
         <!-- ./col -->

@@ -57,7 +57,7 @@ class UserCrudController extends CrudController
     private function getFieldUser()
     {
         $this->getTabUser();
-        $this->getTabIdentification();
+
     }
 
     private function getTabUser()
@@ -67,37 +67,37 @@ class UserCrudController extends CrudController
             'label' => "First Name",
             'type'  => 'text',
             'name'  => 'first_name',
-            'tab'   => 'User',
+
         ]);
         $this->crud->addField([
             'label'  => "Last Name",
             'type'   => 'text',
             'name'   => 'last_name',
-            'tab'    => 'User',
+
         ]);
         $this->crud->addField([
             'label'  => "Email",
             'type'   => 'email',
             'name'   => 'email',
-            'tab'    => 'User',
+
         ]);
         $this->crud->addField([
             'label'  => "Mobile",
             'type'   => 'text',
             'name'   => 'mobile',
-            'tab'    => 'User',
+
         ]);
         $this->crud->addField([
             'label'  => "Password",
             'type'   => 'password',
             'name'   => 'password',
-            'tab'    => 'User',
+
         ]);
         $this->crud->addField([
             'label'   => "Retype Password",
             'type'    => 'password',
             'name'    => 'remember_token',
-            'tab'     => 'User',
+
         ]);
         $this->crud->addField([
             'label'     => "Role",
@@ -106,7 +106,7 @@ class UserCrudController extends CrudController
             'entity'    => 'role',            // the method that defines the relationship in your Model
             'attribute' => 'name',            // foreign key attribute that is shown to user
             'model'     => "App\Models\Role",  // foreign key model
-             'tab'      => 'User',
+
         ]);
         $this->crud->addField([
             'label'        => "Image",
@@ -117,53 +117,11 @@ class UserCrudController extends CrudController
             'aspect_ratio' => 0,          // ommit or set to 0 to allow any aspect ratio
             'prefix'       => 'images/',  // in case you only store the filename in the database, this text will be prepended to the database value
             'default'      => 'default/picture.png',
-            'tab'          => 'User',
+
         ]);
     }
-    private function getTabIdentification()
-    {
-        $this->crud->addField([  // Select2
-            'label'     => "Estimated Monthly Consumption",
-            'type'      => 'text',
-            'name'      => 'estimated_consumption',
-            'tab'       => 'Identification',
-        ]);
-        $this->crud->addField([
-            'label' => 'Referral Number',
-            'name'  => 'referral_number',
-            'type'  => 'text',
-            'tab'   => 'Identification',
-        ]);
-        $this->crud->addField([
-            'name'      => 'identification_type',
-            'label'     => 'Type Indentifition',
-            'type'      => 'radio',
-            'options'   => [ // the key will be stored in the db, the value will be shown as label;
-                1       => "Passport",
-                2       => "Driving Lice",
-                3       => "Nie"
-            ],
-            'inline'    => true,
-            'tab'       => 'Identification',
-        ]);
-        $this->crud->addField([
-            'name'      => 'identification_number',
-            'label'     => 'Identification Number',
-            'type'      => 'text',
-            'tab'       => 'Identification',
-        ]);
-        $this->crud->addField([
-            'label'        => "Image Identification",
-            'name'         => "identification_image",
-            'type'         => 'image',
-            'upload'       => true,
-            'crop'         => true,       // set to true to allow cropping, false to disable
-            'aspect_ratio' => 0,          // ommit or set to 0 to allow any aspect ratio
-            'prefix'       => 'images/',  // in case you only store the filename in the database, this text will be prepended to the database value
-            'default'      => 'default/picture.png',
-            'tab'          => 'Identification',
-        ]);
-    }
+
+
 
 
     private function getColumnUser()

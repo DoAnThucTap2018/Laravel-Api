@@ -43,7 +43,7 @@ class ItemType extends Model
     {
         return $this->hasMany('App\Models\Items');
     }
-    public function taxonomy()
+    public function taxonomies()
     {
         return $this->hasMany('App\Models\Taxonomies');
     }

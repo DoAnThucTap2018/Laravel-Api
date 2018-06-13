@@ -23,6 +23,7 @@ Route::group([
 
     CRUD::resource('setting', 'SettingCrudController');
     CRUD::resource('user', 'UserCrudController');
+    CRUD::resource('taxonomy_item','TaxonomyItemCrudController');
     CRUD::resource('product', 'ProductCrudController');
     CRUD::resource('order', 'OrderCrudController');
     //route show order
